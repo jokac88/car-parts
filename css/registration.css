@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+
+html,
+body {
+	width: 100%;
+	margin: 0 auto;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	color: #00AFE5;
+}
+
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus,
+a:focus {
+	box-shadow: none!important;
+	outline: none!important;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+a {
+	text-decoration: none!important;
+}
+
+#content {
+	padding: 50px 0;
+}
+
+#content .container {
+	position: relative;
+}
+
+#content h3 {
+	color: #00AFE5;
+	margin-bottom: 50px;
+}
+
+#content h3:before {
+	content: '//';
+	margin-right: 5px;
+	color: #666666;
+}
+
+#content .icon {
+	width: 25px;
+	margin-right: 5px;
+	margin-bottom: 4px;
+	vertical-align: top;
+}
+
+#registration form {
+	background-color: rgba(190, 190, 190, 0.7);
+	border-radius: 8px;
+	padding: 30px;
+}
+
+#registration form h4 {
+	margin-bottom: 40px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #00AFEF;
+}
+
+#registration form input,
+#registration form select {
+	color: #000000;
+}
+
+#registration form input:focus,
+#registration form select:focus {
+	border-color: #00AFEF;
+}
+
+#registration form input::placeholder {
+	font-style: italic;
+}
+
+#registration form .form-check {
+	display: inline-block;
+	position: relative;
+	padding-left: 30px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#registration .password-meter-bar {
+	margin: 10px 0;
+	width: 75%;
+	border: 3px solid #C0C0C0;
+}
+
+#registration form .radio input {
+	position: absolute!important;
+	top: 0;
+	left: 0;
+	background-color: #FFFFFF;
+	height: 22px;
+	width: 22px;
+	z-index: 9999;
+	opacity: 0;
+	cursor: pointer;
+}
+
+#registration form .checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 22px;
+	width: 22px;
+	background-color: #EEEEEE;
+	border-radius: 50%;
+	transition: .3s;
+}
+
+#registration form .radio .form-check:hover input ~ .checkmark {
+	background-color: #CCCCCC;
+	transition: .3s;
+}
+
+#registration form .radio .form-check input:checked ~ .checkmark {
+	background-color: #2196F3;
+}
+
+#registration form .checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+#registration form .radio .form-check input:checked ~ .checkmark:after {
+	display: block;
+}
+
+#registration form .radio .form-check .checkmark:after {
+	top: 7px;
+	left: 7px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #FFFFFF;
+}
+
+#registration #company-name {
+	display: none;
+}
+
+.show-input {
+	height: auto!important;
+	opacity: 1!important;
+	transition: .5s!important;
+}
+
+#registration form .custom-select.arrow {
+	background: #FFFFFF url('../img/icon/arrow-grey-bottom.png') no-repeat;
+	border: 1px solid #E4E4E4;
+	background-position: 98% 60%;
+	background-size: 26px 26px;
+	cursor: pointer;
+	transition: .2s;
+}
+
+.custom-select-arrow {
+	background: #FFFFFF url('../img/icon/arrow-grey-top.png') no-repeat!important;
+	background-position: 98% 60%!important;
+	background-size: 26px 26px!important;
+}
+
+#registration form input::-webkit-outer-spin-button,
+#registration form input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+#registration form label input[type="checkbox"],
+#registration form div input[type="checkbox"] {
+	margin-left: 2px;
+	opacity: 0;
+}
+
+#registration form label .checkbox-span {
+	height: 14px;
+	width: 14px;
+	border: 1px solid #00AFEF;
+	background-color: #FFFFFF;
+	display: inline-block;
+	position: relative;
+	top: 1.8px;
+	border-radius: 2px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+#registration form label input:checked + .checkbox-span {
+	background: url('../img/icon/check.svg') center center no-repeat;
+	background-color: #FFFFFF;
+	background-size: 10px 10px;
+}
+
+#registration #btn-registration {
+	padding: 10px 20px;
+	font-weight: bold;
+}
+
+/* Media queries */
+
+@media (max-width: 320px) {
+	#registration form {
+		padding: 20px;
+	}
+	#registration form h4 {
+		border-bottom: 3px solid #00AFEF;
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+	#registration form .shipping {
+		margin-bottom: 30px;
+	}
+	#registration #btn-registration {
+		width: 100%;
+	}
+}
+
+@media (min-width: 321px) and (max-width: 575px) {
+	#registration form {
+		padding: 20px;
+	}
+	#registration form h4 {
+		border-bottom: 3px solid #00AFEF;
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+	#registration form .shipping {
+		margin-bottom: 30px;
+	}
+	#registration #btn-registration {
+		width: 100%;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+	#registration form {
+		padding: 20px;
+	}
+	#registration form h4 {
+		border-bottom: 3px solid #00AFEF;
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+	#registration form .shipping {
+		margin-bottom: 30px;
+	}
+	#registration #btn-registration {
+		text-align: center;
+		width: 70%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 811px) {}
+
+@media (min-width: 812px) and (max-width: 991px) {}
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+@media (min-width: 1200px) {}
