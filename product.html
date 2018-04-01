@@ -1,0 +1,2191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Meta tag start-->
+	<meta charset="UTF-8" />
+	<meta name="author" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta name="theme-color" content="#58595B" />
+	<meta name="msapplication-navbutton-color" content="#58595B" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="#58595B" />
+	<!-- Meta tag end-->
+	<title>Product</title>
+	<!-- Favicon start -->
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<!-- Favicon end -->
+	<!-- CSS and Bootstrap 4 links start -->
+	<link rel="stylesheet" type="text/css" href="css/plugins-css.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<link rel="stylesheet" type="text/css" href="css/product.css" />
+	<!-- CSS and Bootstrap 4 links end -->
+</head>
+
+<body>
+	<!-- Sidenav start -->
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" title="Close"></a>
+		<img class="sidenav-logo" src="img/logo.png" alt="img/logo.png" />
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a class="product active" data-toggle="collapse" href="#dropdown" role="button" aria-expanded="false" aria-controls="dropdown">Product<span class="dropdown-icon">&#8628;</span></a>
+				<ul id="dropdown" class="collapse">
+					<li><a href="javascript:void(0)">Brake<span>Systems</span></a></li>
+					<li><a href="javascript:void(0)">Sensors</a></li>
+					<li><a href="javascript:void(0)">Filters</a></li>
+					<li><a href="javascript:void(0)">Engine</a></li>
+					<li><a href="javascript:void(0)">Cooling<span>Systems</span></a></li>
+					<li><a href="javascript:void(0)">Wheel<span>Bearings</span></a></li>
+				</ul>
+			</li>
+			<li><a href="about-us.html">About<span>Us</span></a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="cart.html">Cart</a></li>
+			<li><a href="registration.html">Registration</a></li>
+			<li><a href="javascript:void(0)" data-toggle="modal" data-target="#modal">Login</a>
+		</ul>
+		<div id="social">
+			<a class="facebook" href="https://www.facebook.com" title="Facebook">
+				<img src="img/social/facebook.png" alt="img/social/facebook.png" />
+			</a>
+			<a class="instagram" href="https://www.instagram.com" title="Instagram">
+				<img src="img/social/instagram.png" alt="img/social/instagram.png" />
+			</a>
+			<a class="youtube" href="https://www.youtube.com" title="YouTube">
+				<img src="img/social/youtube.png" alt="img/social/youtube.png" />
+			</a>
+			<a class="twitter" href="https://www.twitter.com" title="Twitter">
+				<img src="img/social/twitter.png" alt="img/social/twitter.png" />
+			</a>
+		</div>
+	</div>
+	<!-- Sidenav end -->
+	<!-- Header start -->
+	<header>
+		<div class="container">
+			<div class="row no-gutters">
+				<div class="col-md-2 d-none d-md-block">
+					<a href="index.html">
+						<img src="img/logo.png" class="logo" title="Home" alt="img/logo.png" />
+					</a>
+				</div>
+				<div class="col-md-10">
+					<div class="row">
+						<div class="col-md-6 search-input d-none d-md-block">
+							<div class="input-group">
+								<input type="text" placeholder="Enter item reference number" />
+								<button id="btn-search-input" class="btn" type="button">
+									<i class="fas fa-search"></i>
+								</button>
+							</div>
+						</div>
+						<div id="registration" class="col-md-6 text-right">
+							<ul class="registration">
+								<li>
+									<a href="registration.html" class="mr-1">
+										<img src="img/icon/user.png" alt="img/icon/profile-icon.png" />
+										<span>Registration</span>
+									</a>
+									<a href="javascript:void(0)" data-toggle="modal" data-target="#modal">
+											<img src="img/icon/password.png" alt="img/icon/password.png" />
+											<span>Login</span>
+										</a>
+									<a data-toggle="collapse" href="#user-dropdown" role="button" aria-expanded="false" aria-controls="user-dropdown">
+										<img src="img/icon/user.png" alt="img/icon/user.png" />
+										<span>User</span>
+									</a>
+									<ul id="user-dropdown" class="collapse">
+										<li><a href="admin/index.html"><i class="fas fa-user mr-2"></i>Profile</a></li>
+										<li><a href="javascript:vodi(0)"><i class="fas fa-cog mr-2"></i>Settings</a></li>
+										<li><a href="javascript:vodi(0)"><i class="fas fa-sign-out-alt mr-2"></i>Logout</a></li>
+									</ul>
+								</li>
+								<li>
+									<a id="cart-show" href="javascript:void(0)">
+										<img src="img/icon/basket.png" alt="img/icon/profile-icon.png" />
+										<span>Cart (0)</span>
+									</a>
+								</li>
+								<li class="social d-none d-md-inline-block">
+									<a href="https://www.facebook.com" title="Facebook">
+										<img src="img/social/facebook.png" alt="img/social/facebook.png" />
+									</a>
+									<a href="https://www.instagram.com" title="Instagram">
+										<img src="img/social/instagram.png" alt="img/social/instagram.png" />
+									</a>
+									<a href="https://www.youtube.com" title="YouTube">
+										<img src="img/social/youtube.png" alt="img/social/youtube.png" />
+									</a>
+									<a href="https://www.twitter.com" title="Twitter">
+										<img src="img/social/twitter.png" alt="img/social/twitter.png" />
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-12 d-none d-md-block">
+							<nav class="navbar">
+								<ul class="navbar-nav text-uppercase">
+									<li class="nav-item">
+										<a class="nav-link" href="index.html">Home</a>
+									</li>
+									<li id="product-dropdown" class="nav-item">
+										<a class="nav-link active" href="javascript:vodi(0)">Product <i class="fas fa-caret-down"></i>
+											</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="about-us.html">About Us</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="contact.html">Contact</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div id="navbarTop-right" class="col-12 text-right p-0 my-3 d-md-none">
+							<a id="navbarSearch" data-toggle="collapse" href="#search-input" role="button" aria-expanded="false" aria-controls="search-input">
+								<img src="img/icon/search-white.png" alt="img/icon/search-white.png" />
+							</a>
+							<a id="sidenav" onclick="openNav()">
+								<img class="ml-3" src="img/side-menu.png" alt="img/side-menu.png" />
+							</a>
+						</div>
+						<div id="search-input" class="col-12 px-0 collapse">
+							<div class="input-group pb-3">
+								<input type="text" placeholder="Enter item reference number" />
+								<div class="input-group-append">
+									<button id="btn-navbarSearch" class="btn btn-primary">
+										<i class="fas fa-search"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Header end -->
+	<!-- Breadcrumb start -->
+	<nav aria-label="breadcrumb">
+		<div class="container">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+				<li class="breadcrumb-item active" aria-current="page">Product</li>
+			</ol>
+		</div>
+	</nav>
+	<!-- Breadcrumb end -->
+	<!-- Content start -->
+	<div id="content">
+		<!-- Modal start -->
+		<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-body">
+						<button type="button" id="btn-closeModal" class="close" data-dismiss="modal" aria-label="Close" title="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<div class="form-div">
+							<form action="">
+								<h1 class="d-flex justify-content-center">Please login</h1>
+								<div class="form-group d-flex justify-content-center username">
+									<input type="text" id="username" class="form-control border-0" name="username" required />
+									<span class="floating-label">Email/username</span>
+								</div>
+								<div class="form-group d-flex justify-content-center password">
+									<input type="password" id="password" class="form-control border-0" name="password" required />
+									<span class="floating-label">Password</span>
+								</div>
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input m-0" value="" onclick="myFunction()" />
+									<span class="checkbox-span"></span>
+									Show Password
+								</label>
+								<div class="d-flex justify-content-center">
+									<button type="submit" id="btn-login" class="btn btn-primary">Login</button>
+								</div>
+								<label class="form-check-label">
+							<input type="checkbox" class="form-check-input m-0" value="" />
+								<span class="checkbox-span"></span>
+								Remember me
+							</label>
+								<div class="d-flex justify-content-center text-center forgotPasword">
+									<a href="javascript:void(0)">Forgot your password?</a>
+								</div>
+							</form>
+							<div class="d-flex justify-content-center">
+								<button id="btn-create" class="btn btn-success" onclick="window.location.href='registration.html'">Create an account</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal end -->
+		<div class="container">
+			<!-- Cart start -->
+			<div id="cart">
+				<div class="item-inCart">
+					<div class="row align-items-center p-4">
+						<div id="item" class="col-lg-8">
+							<div class="row align-items-center">
+								<div class="col-lg-5 text-center">
+									<img src="img/items/oil-4.png" alt="img/items/oil-4.png" />
+									<p class="name"><b>Wearever</b> Unloaded Caliper - Domestic</p>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<div class="review">(154 reviews) | #18-B4728</div>
+								</div>
+								<div class="col-lg-4 add-toCart text-center">
+									<p class="text-uppercase font-weight-bold text-success"><img src="img/icon/check.png" class="icon" alt="img/icon/check.png" />Added to Cart</p>
+									<p class="text-uppercase font-weight-bold">Card subtotal <span class="font-weight-normal">1 (items)</span></p>
+								</div>
+								<div class="col-lg-3 text-center price">
+									<p class="text-uppercase font-weight-bold text-danger">$63.99</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="row align-items-center">
+								<div class="col-3 text-right col-sm-2 text-sm-center text-md-right col-lg-4">
+									<button id="btn-removeItem" class="btn btn-danger text-uppercase font-weight-bold" title="Remove item" type="button">&times;</button>
+								</div>
+								<div class="col-9 col-sm-6 offset-sm-2 col-md-6 offset-lg-0 col-lg-8 text-center">
+									<button id="btn-checkout" class="btn btn-primary text-uppercase font-weight-bold" onclick="window.location.href='cart.html'">Proceed to checkout</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button id="btn-closeCart" class="btn" title="Close" type="button">&times;</button>
+				</div>
+			</div>
+			<!-- Cart end -->
+			<!-- Dropdown start -->
+			<div id="dropdown-hover" class="d-none d-md-block">
+				<div class="row no-gutters">
+					<div class="col-md-8">
+						<h3>Most Popular Categories</h3>
+						<div class="row no-gutters">
+							<div class="col-md-6">
+								<h6>Brake Systems</h6>
+								<ul>
+									<li><a>Brake Booster</a></li>
+									<li><a>Brake kits</a></li>
+									<li><a>Vacuum Pump</a></li>
+									<li><a class="see-more">See more <i class="fas fa-angle-right"></i></a></li>
+								</ul>
+								<h6>Sensors</h6>
+								<ul>
+									<li><a>Camshaft Position</a></li>
+									<li><a>Sensor, Crankshaft Pulse</a></li>
+									<li><a>Vacuum Pump</a></li>
+									<li><a class="see-more">See more <i class="fas fa-angle-right"></i></a></li>
+								</ul>
+								<h6>Filters</h6>
+								<ul>
+									<li><a>Air Dryer</a></li>
+									<li><a>Air Filter</a></li>
+									<li><a>Fuel Filter</a></li>
+									<li><a class="see-more">See more <i class="fas fa-angle-right"></i></a></li>
+								</ul>
+							</div>
+							<div class="col-md-6 second">
+								<h6>Engine Parts</h6>
+								<ul>
+									<li><a>Engine Electrics</a></li>
+									<li><a>Fuel Supply System</a></li>
+									<li><a>Engine Air Supply</a></li>
+									<li><a class="see-more">See more <i class="fas fa-angle-right"></i></a></li>
+								</ul>
+								<h6>Cooling Systems</h6>
+								<ul>
+									<li><a>Radiator</a></li>
+									<li><a>Radiator Fan</a></li>
+									<li><a>Thermostat</a></li>
+									<li><a class="see-more">See more <i class="fas fa-angle-right"></i></a></li>
+								</ul>
+								<h6>Wheel Bearings</h6>
+								<ul>
+									<li><a>Nut</a></li>
+									<li><a>Seal</a></li>
+									<li><a>Split</a></li>
+									<li><a class="see-more">See more <i class="fas fa-angle-right"></i></a></li>
+								</ul>
+							</div>
+							<div class="col-10">
+								<div class="row no-gutters align-items-center offer">
+									<div class="col-md-7">
+										<h5 class="text-uppercase m-0">Let us test your starting & charging systems for free.</h5>
+									</div>
+									<div class="col-md-5">
+										<img src="img/offer.png" alt="img/offer.png" />
+										<button id="btn-learn" class="btn btn-warning text-uppercase" type="button">Learn more<i class="fas fa-caret-right ml-2"></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 all-categories">
+						<h4>All Categories</h4>
+						<ul>
+							<li><a>Air Conditioning or Heater</a></li>
+							<li><a>Bearings</a></li>
+							<li><a>Belt Tensioner Kits</a></li>
+							<li><a>Body</a></li>
+							<li><a>Brake Systems</a></li>
+							<li><a>Clutch/-Mounting Parts</a></li>
+							<li><a>Cooling Systems</a></li>
+							<li><a>Electrics Systems</a></li>
+							<li><a>Engine Parts</a></li>
+							<li><a>Exhaust Systems</a></li>
+							<li><a>Filters</a></li>
+							<li><a>Interior Equipment</a></li>
+							<li><a>Other Parts</a></li>
+							<li><a>Rubber-Metal Parts</a></li>
+							<li><a>Sensors</a></li>
+							<li><a>Special Tools</a></li>
+							<li><a>Steering and Suspension Parts</a></li>
+							<li><a>Suspension Damping</a></li>
+							<li><a>Timing Chain and Accessories</a></li>
+							<li><a>Wheel Bearings</a></li>
+							<li><a>Wheel Hubs / Axle Journals</a></li>
+							<li><a>Window Cleaning</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- Dropdown end -->
+			<!-- Product start -->
+			<div id="product">
+				<div class="row">
+					<!-- Filters start -->
+					<div id="filters" class="col-md-4 col-lg-3 mb-5">
+						<h2 class="wow slideInLeft"><img src="img/icon/filters.png" class="icon align-bottom" alt="img/icon/filters.png" /> Filters</h2>
+						<form action="">
+							<div class="result font-weight-bold pb-4">10 result</div>
+							<div class="sort-by pb-4 mb-4">
+								<div class="font-weight-bold">Sort By</div>
+								<div class="sort-by-dropdown">
+									<select class="custom-select arrow mt-2">
+									<option value="0">Best Match</option>
+									<option selected value="1">Most Popular</option>
+									<option value="2">Top Rated</option>
+									<option value="5">Date (Oldest - Newest)</option>
+									<option value="6">Date (Newest - Oldest)</option>
+									<option value="3">Price (Low - High)</option>
+									<option value="4">Price (High - Low)</option>
+									<option value="7">Name (A - Z)</option>
+									<option value="8">Name (Z - A)</option>
+								</select>
+								</div>
+							</div>
+							<div class="category pb-3 mb-4">
+								<div class="header text-uppercase p-0">Category
+									<div class="switch-button">
+										<span class="switch-button-label on">#</span>
+										<div class="switch-button-background">
+											<div class="switch-button-button"></div>
+										</div>
+										<span class="switch-button-label off">A-Z</span>
+									</div>
+									<a class="search-collapse" data-toggle="collapse" href="#collapseSearchCategory" role="button" aria-expanded="true" aria-controls="collapseSearchCategory" title="Search Category">
+										<i class="fas fa-search"></i>
+									</a>
+									<a class="btn-collapse" data-toggle="collapse" href="#collapseCategory" role="button" aria-expanded="true" aria-controls="collapseCategory" title="Collapse"></a>
+									<div id="collapseSearchCategory" class="collapse show">
+										<input type="text" placeholder="Type here to narrow category list" />
+									</div>
+								</div>
+								<div id="collapseCategory" class="form-check collapse show">
+									<label class="form-check-label">
+										<input id="checkAllCategory" class="form-check-input" type="checkbox" value="" />
+										<span class="checkbox-span"></span>
+										Check all (523)
+									</label>
+									<div class="form-check-label">
+										<input id="expandAll" class="form-check-input" type="checkbox" value="" />
+										<button id="btn-expand" class="btn btn-expand" type="button" data-toggle="collapse" data-target="#expand1" aria-expanded="false" aria-controls="expand1" title="Collapse">+</button> Expand all (123)
+									</div>
+									<div class="form-check-label">
+										<input class="form-check-input" type="checkbox" value="" />
+										<span class="checkbox-span"></span>
+										<button class="btn btn-expand" type="button" data-toggle="collapse" data-target="#expand1" aria-expanded="false" aria-controls="expand1" title="Collapse">+</button> Air Conditioning or Heater (80)
+										<div id="expand1" class="expand collapse">
+											<label class="form-check-label">
+												<input class="form-check-input" type="checkbox" value="" />
+												<span class="checkbox-span"></span>
+												A/C Compressor Job/Kit (28)
+											</label>
+											<label class="form-check-label">
+												<input class="form-check-input" type="checkbox" value="" />
+												<span class="checkbox-span"></span>
+												A/C Compressor w/Clutch (22)
+											</label>
+											<label class="form-check-label">
+												<input class="form-check-input" type="checkbox" value="" />
+												<span class="checkbox-span"></span>
+												A/C Compressor w/o Clutch (15)
+											</label>
+										</div>
+									</div>
+									<div class="form-check-label">
+										<input class="form-check-input" type="checkbox" value="" />
+										<span class="checkbox-span"></span>
+										<button class="btn btn-expand" type="button" data-toggle="collapse" data-target="#expand2" aria-expanded="false" aria-controls="expand2" title="Collapse">+</button> Bearings (55)
+										<div id="expand2" class="expand collapse">
+											<label class="form-check-label">
+											<input class="form-check-input" type="checkbox" value="" />
+											<span class="checkbox-span"></span>
+											A/C Compressor Job/Kit (28)
+										</label>
+											<label class="form-check-label">
+											<input class="form-check-input" type="checkbox" value="" />
+											<span class="checkbox-span"></span>
+											A/C Compressor w/Clutch (22)
+										</label>
+											<label class="form-check-label">
+											<input class="form-check-input" type="checkbox" value="" />
+											<span class="checkbox-span"></span>
+											A/C Compressor w/o Clutch (15)
+										</label>
+										</div>
+									</div>
+									<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" value="" />
+									<span class="checkbox-span"></span>
+									Belt Tensioner Kits (134)
+								</label>
+									<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" value="" />
+									<span class="checkbox-span"></span>
+									Body (250)
+								</label>
+									<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" value="" />
+									<span class="checkbox-span"></span>
+									Brake Systems (80)
+								</label>
+									<div class="seeMore-Category collapse">
+										<label class="form-check-label">
+										<input class="form-check-input" type="checkbox" value="" />
+										<span class="checkbox-span"></span>
+										Clutch/-Mounting Parts (134)
+									</label>
+										<label class="form-check-label">
+										<input class="form-check-input" type="checkbox" value="" />
+										<span class="checkbox-span"></span>
+										Cooling Systems (104)
+									</label>
+										<label class="form-check-label">
+										<input class="form-check-input" type="checkbox" value="" />
+										<span class="checkbox-span"></span>
+										Electrics Systems (156)
+									</label>
+										<label class="form-check-label">
+										<input class="form-check-input" type="checkbox" value="" />
+										<span class="checkbox-span"></span>
+										Engine Parts (80)
+									</label>
+										<label class="form-check-label">
+										<input class="form-check-input" type="checkbox" value="" />
+										<span class="checkbox-span"></span>
+										Exhaust Systems (32)
+									</label>
+										<label class="form-check-label">
+										<input class="form-check-input" type="checkbox" value="" />
+										<span class="checkbox-span"></span>
+										Filters (55)
+									</label>
+										<label class="form-check-label">
+										<input class="form-check-input" type="checkbox" value="" />
+										<span class="checkbox-span"></span>
+										Interior Equipment (80)
+									</label>
+										<label class="form-check-label">
+										<input class="form-check-input" type="checkbox" value="" />
+										<span class="checkbox-span"></span>
+										Other Parts (134)
+									</label>
+										<label class="form-check-label">
+										<input class="form-check-input" type="checkbox" value="" />
+										<span class="checkbox-span"></span>
+										Rubber-Metal Parts (95)
+									</label>
+										<label class="form-check-label">
+										<input class="form-check-input" type="checkbox" value="" />
+										<span class="checkbox-span"></span>
+										Sensors (55)
+									</label>
+										<label class="form-check-label">
+										<input class="form-check-input" type="checkbox" value="" />
+										<span class="checkbox-span"></span>
+										Special Tools (80)
+									</label>
+										<label class="form-check-label">
+										<input class="form-check-input" type="checkbox" value="" />
+										<span class="checkbox-span"></span>
+										Steering and Suspension Parts (35)
+									</label>
+										<label class="form-check-label">
+										<input class="form-check-input" type="checkbox" value="" />
+										<span class="checkbox-span"></span>
+										Suspension Damping (88)
+									</label>
+										<label class="form-check-lael">
+										<input class="form-check-input" type="checkbox" value="" />
+										<span class="checkbox-span"></span>
+										Timing Chain and Accssories (154)
+									</label>
+										<label class="form-check-label">
+										<input class="form-check-input" type="checkbox" value="" />
+										<span class="checkbox-span"></span>
+										Wheel Bearings (22)
+									</label>
+										<label class="form-check-label">
+										<input class="form-check-input" type="checkbox" value="" />
+										<span class="checkbox-span"></span>
+										Wheel Hubs / Axle Journals (22)
+									</label>
+										<label class="form-check-label">
+										<input class="form-check-input" type="checkbox" value="" />
+										<span class="checkbox-span"></span>
+										Window Cleaning (55)
+									</label>
+									</div>
+									<button id="btn-seeMore-Category" class="btn btn-seeMore" type="button" data-toggle="collapse" href=".seeMore-Category" role="button" aria-expanded="false" aria-controls="seeMore-Category">See more</button>
+								</div>
+							</div>
+							<div class="product-ratings pb-3 mb-4">
+								<div class="header text-uppercase p-0">
+									Product ratings
+									<a class="btn-collapse" data-toggle="collapse" href="#collapseProduct-ratings" role="button" aria-expanded="true" aria-controls="collapseProduct-ratings" title="Collapse"></a>
+								</div>
+								<div id="collapseProduct-ratings" class="form-check collapse show">
+									<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" value="" />
+									<span class="checkbox-span"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									(154)
+								</label>
+									<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" value="" />
+									<span class="checkbox-span"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star"></span>
+									(105)
+								</label>
+									<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" value="" />
+									<span class="checkbox-span"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									(82)
+								</label>
+									<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" value="" />
+									<span class="checkbox-span"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									(55)
+								</label>
+									<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" value="" />
+									<span class="checkbox-span"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									(25)
+								</label>
+								</div>
+							</div>
+							<div class="brand pb-3 mb-4">
+								<div class="header text-uppercase p-0">
+									Brand
+									<a class="btn-collapse" data-toggle="collapse" href="#collapseBrand" role="button" aria-expanded="true" aria-controls="collapseBrand" title="Collapse"></a>
+								</div>
+								<div id="collapseBrand" class="form-check text-uppercase collapse show">
+									<label class="form-check-label">
+									<input id="checkAllBrand" class="form-check-input" type="checkbox" value="" />
+									<span class="checkbox-span"></span>
+									<span class="check-all">Check all (22)</span>
+								</label>
+									<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" value="" />
+									<span class="checkbox-span"></span>
+									Alfa Romeo (50)
+								</label>
+									<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" value="" />
+									<span class="checkbox-span"></span>
+									Audi (93)
+								</label>
+									<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" value="" />
+									<span class="checkbox-span"></span>
+									Bmw (134)
+								</label>
+									<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" value="" />
+									<span class="checkbox-span"></span>
+									Citroën (35)
+								</label>
+									<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" value="" />
+									<span class="checkbox-span"></span>
+									Fiat (80)
+								</label>
+									<div class="seeMore-Brand collapse">
+										<label class="form-check-label">
+										<input class="form-check-input" type="checkbox" value="" />
+										<span class="checkbox-span"></span>
+										Honda (134) </label>
+										<label class="form-check-label">
+										<input class="form-check-input" type="checkbox" value="" />
+										<span class="checkbox-span"></span>
+										Hyundai (104)
+									</label>
+										<label class="form-check-label">
+										<input class="form-check-input" type="checkbox" value="" />
+										<span class="checkbox-span"></span>
+										Mazda (156)
+									</label>
+										<label class="form-check-label">
+										<input class="form-check-input" type="checkbox" value="" />
+										<span class="checkbox-span"></span>
+										Mercedes-Benz (80)
+									</label>
+										<label class="form-check-label">
+										<input class="form-check-input" type="checkbox" value="" />
+										<span class="checkbox-span"></span>
+										Mitsubishi (55)
+									</label>
+										<label class="form-check-label">
+										<input class="form-check-input" type="checkbox" value="" />
+										<span class="checkbox-span"></span>
+										Nissan (80)
+									</label>
+										<label class="form-check-label">
+										<input class="form-check-input" type="checkbox" value="" />
+										<span class="checkbox-span"></span>
+										Peugeot (134)
+									</label>
+										<label class="form-check-label">
+										<input class="form-check-input" type="checkbox" value="" />
+										<span class="checkbox-span"></span>
+										Subaru (95)
+									</label>
+										<label class="form-check-label">
+										<input class="form-check-input" type="checkbox" value="" />
+										<span class="checkbox-span"></span>
+										Suzuki (55)
+									</label>
+										<label class="form-check-label">
+										<input class="form-check-input" type="checkbox" value="" />
+										<span class="checkbox-span"></span>
+										Toyota (80)
+									</label>
+										<label class="form-check-label">
+										<input class="form-check-input" type="checkbox" value="" />
+										<span class="checkbox-span"></span>
+										Volvo (134)
+									</label>
+									</div>
+									<button id="btn-seeMore-Brand" class="btn btn-seeMore" type="button" data-toggle="collapse" href=".seeMore-Brand" role="button" aria-expanded="false" aria-controls="seeMore-Brand">See more</button>
+								</div>
+							</div>
+							<div class="price pb-3 mb-4">
+								<div class="header text-uppercase p-0"> Price
+									<a class="btn-collapse" data-toggle="collapse" href="#collapsePrice" role="button" aria-expanded="true" aria-controls="collapsePrice" title="Collapse"></a>
+								</div>
+								<div id="collapsePrice" class="form-check collapse show">
+									<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" value="" />
+									<span class="checkbox-span"></span>
+									Less than $10 (448)
+								</label>
+									<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" value="" />
+									<span class="checkbox-span"></span>
+									$10 - $24.99 (1830)
+								</label>
+									<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" value="" />
+									<span class="checkbox-span"></span>
+									$25 - $49.99 (941)
+								</label>
+									<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" value="" />
+									<span class="checkbox-span"></span>
+									$50 - $99.99 (1510)
+								</label>
+									<label class="form-check-label mb-0">
+									<input class="form-check-input" type="checkbox" value="" />
+									<span class="checkbox-span"></span>
+									$100 and up (218)
+								</label>
+									<input type="number" id="price-min" placeholder="min" />
+									<span class="font-weight-bold">-</span>
+									<input type="number" id="price-max" placeholder="max" />
+								</div>
+							</div>
+							<button id="btn-submit" class="btn btn-primary" type="submit">
+							<i class="fas fa-search"></i> Search
+						</button>
+						</form>
+					</div>
+					<!-- Filters end -->
+					<!-- Products start -->
+					<div id="products" class="col-md-8 col-lg-9">
+						<h2 class="wow slideInLeft"><img src="img/icon/product.png" class="icon align-bottom" alt="img/icon/product.png" /> Products</h2>
+						<!-- Search vehicle start -->
+						<div id="search-vehicle">
+							<form action="">
+								<h4 class="text-uppercase font-weight-bold">
+									<i class="fas fa-car"></i> Please select your vehicle to see exact fit parts
+								</h4>
+								<div class="row no-gutters justify-content-lg-center">
+									<div class="col-6 my-1 px-1 col-sm-4 col-lg-2 my-lg-0">
+										<select id="type" name="type" class="custom-select arrow" required>
+										<option selected value="">Select Type</option>
+										<option value="1">Car/Truck</option>
+										<option value="2">Motorcycle</option>
+									</select>
+									</div>
+									<div class="col-6 my-1 px-1 col-sm-4 col-lg-2 my-lg-0">
+										<select id="year" name="year" class="custom-select arrow" required disabled>
+										<option selected value="">Year</option>
+										<option value="1">2018</option>
+										<option value="2">2017</option>
+										<option value="3">2016</option>
+										<option value="4">2015</option>
+										<option value="5">2014</option>
+										<option value="6">2013</option>
+										<option value="7">2012</option>
+										<option value="8">2011</option>
+										<option value="9">2010</option>
+										<option value="10">2009</option>
+									</select>
+									</div>
+									<div class="col-6 my-1 px-1 col-sm-4 col-lg-2 my-lg-0">
+										<select id="make" name="make" class="custom-select arrow" required disabled>
+										<option selected value="">Make</option>
+										<option value="1">One</option>
+										<option value="2">Two</option>
+										<option value="3">Three</option>
+									</select>
+									</div>
+									<div class="col-6 my-1 px-1 col-sm-4 col-lg-2 my-lg-0">
+										<select id="model" name="model" class="custom-select arrow" required disabled>
+										<option selected value="">Model</option>
+										<option value="1">One</option>
+										<option value="2">Two</option>
+										<option value="3">Three</option>
+									</select>
+									</div>
+									<div class="col-6 my-1 px-1 col-sm-4 col-lg-2 my-lg-0">
+										<select id="engine" name="engine" class="custom-select arrow" required disabled>
+										<option selected value="">Engine</option>
+										<option value="1">One</option>
+										<option value="2">Two</option>
+										<option value="3">Three</option>
+									</select>
+									</div>
+									<div class="col-8 offset-2 mt-2 col-sm-6 offset-sm-3 mt-sm-3 col-md-8 mt-md-2 offset-md-2 px-md-1 col-lg-2 offset-lg-0 mt-lg-0 px-lg-0">
+										<button id="btn-search-vehicle" class="btn btn-primary text-uppercase" type="submit" disabled>Add a vehicle</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<!-- Search vehicle end -->
+						<div id="view" class="row no-gutters aling-items-center">
+							<div class="col-6">
+								<div class="view listView activeView">
+									<img src="img/icon/list.png" alt="img/icon/list.png" title="List view" />
+								</div>
+								<div class="view gridView">
+									<img src="img/icon/grid.png" alt="img/icon/grid.png" title="Grid view" />
+								</div>
+							</div>
+							<div class="col-6 numberOfProducts text-right">
+								<span class="mr-1">Products</span>
+								<select class="custom-select triangle">
+									<option selected value="10">10</option>
+									<option value="20">20</option>
+									<option value="30">30</option>
+									<option value="50">50</option>
+								</select>
+							</div>
+							<!-- Item to cart star -->
+							<!-- List View star -->
+							<div id="listView" class="collapse show">
+								<div class="item-to-cart">
+									<div class="row no-gutters align-items-center my-5">
+										<div class="col-sm-6 col-md-7">
+											<div class="row align-items-center">
+												<div class="col-lg-4 text-center text-sm-left">
+													<img src="img/items/oil-4.png" alt="img/items/oil-4.png" />
+												</div>
+												<div class="col-lg-8 text-center text-sm-left py-3">
+													<h3 class="name"><b>Wearever</b> Unloaded Caliper - Domestic</h3>
+													<span class="fas fa-star checked"></span>
+													<span class="fas fa-star checked"></span>
+													<span class="fas fa-star checked"></span>
+													<span class="fas fa-star checked"></span>
+													<span class="fas fa-star checked"></span>
+													<span class="review">(154 reviews) | #18-B4728</span>
+													<p class="limited text-uppercase pt-3">Limited lifetime replacement</p>
+													<a class="add-vehicle">Add a vehicle to find parts that fit</a>
+													<p class="price-cart text-uppercase font-weight-bold mt-4 ">$63.99</p>
+													<div class="store-pickup">
+														<p class="m-0"><i class="fas fa-check"></i> In-store pickup</p>
+														<p class="m-0"><i class="fas fa-check"></i> Ships for free on orders over $25</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6 col-md-5 add-to-cart">
+											<div class="row no-gutters align-items-center">
+												<div class="col-4 col-sm-5 col-md-8 offset-md-2 col-lg-5 offset-lg-0 quantity"> <span>Qty: </span>
+													<select class="custom-select triangle">
+													<option selected value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+												</select>
+												</div>
+												<div class="col-8 col-sm-7 col-md-10 offset-md-1 col-lg-7 offset-lg-0 py-4 py-md-3 px-3">
+													<button id="btn-addToCart-1" class="btn btn-primary text-uppercase" type="button">Add to cart</button>
+												</div>
+												<div class="shipping">
+													<div class="container">
+														<input type="radio" class="radio-button" name="radio" />
+														<span class="checkmark"></span>
+													</div>
+													<p><span class="text-uppercase font-weight-bold">Ship to home</span>
+														<br />Ships for free on orders over $25</p>
+													<div class="img-cart">
+														<img src="img/icon/gift.png" alt="img/icon/gift.png" />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item-to-cart">
+									<div class="row no-gutters align-items-center my-5">
+										<div class="col-sm-6 col-md-7">
+											<div class="row align-items-center">
+												<div class="col-lg-4 text-center text-sm-left">
+													<img src="img/items/item-2.jpg" alt="img/items/item-2.jpg" />
+												</div>
+												<div class="col-lg-8 text-center text-sm-left py-3">
+													<h3 class="name"><b>Wearever</b> Brake Parts Cleaner</h3>
+													<span class="fas fa-star checked"></span>
+													<span class="fas fa-star checked"></span>
+													<span class="fas fa-star checked"></span>
+													<span class="fas fa-star checked"></span>
+													<span class="fas fa-star checked"></span>
+													<span class="review">(577 reviews) | #W7340</span>
+													<p class="limited text-uppercase pt-3">30 day replacement if defective</p>
+													<a class="add-vehicle">Add a vehicle to find parts that fit</a>
+													<p class="price-cart text-uppercase font-weight-bold mt-4 animated pulse infinite"><span class="text-danger">$33.99</span> <del class="ml-4 text-muted">$63.99</del></p>
+													<div class="store-pickup">
+														<p class="m-0"><i class="fas fa-check"></i> In-store pickup</p>
+														<p class="m-0"><i class="fas fa-check"></i> Ships for free on orders over $25</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6 col-md-5 add-to-cart">
+											<div class="row no-gutters align-items-center">
+												<div class="col-4 col-sm-5 col-md-8 offset-md-2 col-lg-5 offset-lg-0 quantity"> <span>Qty: </span>
+													<select class="custom-select triangle">
+													<option selected value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+												</select>
+												</div>
+												<div class="col-8 col-sm-7 col-md-10 offset-md-1 col-lg-7 offset-lg-0 py-4 py-md-3 px-3">
+													<button id="btn-addToCart-2" class="btn btn-primary text-uppercase" type="button">Add to cart</button>
+												</div>
+												<div class="shipping">
+													<div class="container">
+														<input type="radio" class="radio-button" name="radio" />
+														<span class="checkmark"></span>
+													</div>
+													<p><span class="text-uppercase font-weight-bold">Ship to home</span>
+														<br />Ships for free on orders over $25</p>
+													<div class="img-cart">
+														<img src="img/icon/gift.png" alt="img/icon/gift.png" />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item-to-cart">
+									<div class="row no-gutters align-items-center my-5">
+										<div class="col-sm-6 col-md-7">
+											<div class="row align-items-center">
+												<div class="col-lg-4 text-center text-sm-left">
+													<img src="img/items/item-1.jpg" alt="img/items/item-1.jpg" />
+												</div>
+												<div class="col-lg-8 text-center text-sm-left py-3">
+													<h3 class="name"><b>Wearever</b> Unloaded Caliper - Domestic</h3>
+													<span class="fas fa-star checked"></span>
+													<span class="fas fa-star checked"></span>
+													<span class="fas fa-star checked"></span>
+													<span class="fas fa-star checked"></span>
+													<span class="fas fa-star"></span>
+													<span class="review">(124 reviews) | #18-B4728</span>
+													<p class="limited text-uppercase pt-3">Limited lifetime replacement</p>
+													<a class="add-vehicle">Add a vehicle to find parts that fit</a>
+													<p class="price-cart text-uppercase font-weight-bold mt-4 ">$93.99</p>
+													<div class="store-pickup">
+														<p class="m-0"><i class="fas fa-check"></i> In-store pickup</p>
+														<p class="m-0"><i class="fas fa-check"></i> Ships for free on orders over $25</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6 col-md-5 add-to-cart">
+											<div class="row no-gutters align-items-center">
+												<div class="col-4 col-sm-5 col-md-8 offset-md-2 col-lg-5 offset-lg-0 quantity"> <span>Qty: </span>
+													<select class="custom-select triangle">
+													<option selected value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+												</select>
+												</div>
+												<div class="col-8 col-sm-7 col-md-10 offset-md-1 col-lg-7 offset-lg-0 py-4 py-md-3 px-3">
+													<button id="btn-addToCart-3" class="btn btn-primary text-uppercase" type="button">Add to cart</button>
+												</div>
+												<div class="shipping">
+													<div class="container">
+														<input type="radio" class="radio-button" name="radio" />
+														<span class="checkmark"></span>
+													</div>
+													<p><span class="text-uppercase font-weight-bold">Ship to home</span>
+														<br />Ships for free on orders over $25</p>
+													<div class="img-cart">
+														<img src="img/icon/gift.png" alt="img/icon/gift.png" />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item-to-cart">
+									<div class="row no-gutters align-items-center my-5">
+										<div class="col-sm-6 col-md-7">
+											<div class="row align-items-center">
+												<div class="col-lg-4 text-center text-sm-left">
+													<img src="img/items/item-6.jpg" alt="img/items/item-6.png" />
+												</div>
+												<div class="col-lg-8 text-center text-sm-left py-3">
+													<h3 class="name"><b>Wearever</b> Unloaded Caliper - Domestic</h3>
+													<span class="fas fa-star checked"></span>
+													<span class="fas fa-star checked"></span>
+													<span class="fas fa-star checked"></span>
+													<span class="fas fa-star checked"></span>
+													<span class="fas fa-star checked"></span>
+													<span class="review">(154 reviews) | #18-B4728</span>
+													<p class="limited text-uppercase pt-3">Limited lifetime replacement</p>
+													<a class="add-vehicle">Add a vehicle to find parts that fit</a>
+													<p class="price-cart text-uppercase font-weight-bold mt-4 ">$63.99</p>
+													<div class="store-pickup">
+														<p class="m-0"><i class="fas fa-check"></i> In-store pickup</p>
+														<p class="m-0"><i class="fas fa-check"></i> Ships for free on orders over $25</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6 col-md-5 add-to-cart">
+											<div class="row no-gutters align-items-center">
+												<div class="col-4 col-sm-5 col-md-8 offset-md-2 col-lg-5 offset-lg-0 quantity"> <span>Qty: </span>
+													<select class="custom-select triangle">
+													<option selected value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+												</select>
+												</div>
+												<div class="col-8 col-sm-7 col-md-10 offset-md-1 col-lg-7 offset-lg-0 py-4 py-md-3 px-3">
+													<button id="btn-addToCart-4" class="btn btn-primary text-uppercase" type="button">Add to cart</button>
+												</div>
+												<div class="shipping">
+													<div class="container">
+														<input type="radio" class="radio-button" name="radio" />
+														<span class="checkmark"></span>
+													</div>
+													<p><span class="text-uppercase font-weight-bold">Ship to home</span>
+														<br />Ships for free on orders over $25</p>
+													<div class="img-cart">
+														<img src="img/icon/gift.png" alt="img/icon/gift.png" />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item-to-cart">
+									<div class="row no-gutters align-items-center my-5">
+										<div class="col-sm-6 col-md-7">
+											<div class="row align-items-center">
+												<div class="col-lg-4 text-center text-sm-left">
+													<img src="img/items/item-7.jpg" alt="img/items/oil-4.png" />
+												</div>
+												<div class="col-lg-8 text-center text-sm-left py-3">
+													<h3 class="name"><b>Wearever</b> Unloaded Caliper w/Bracket - Domestic</h3>
+													<span class="fas fa-star checked"></span>
+													<span class="fas fa-star checked"></span>
+													<span class="fas fa-star checked"></span>
+													<span class="fas fa-star checked"></span>
+													<span class="fas fa-star checked"></span>
+													<span class="review">(154 reviews) | #18-B4728</span>
+													<p class="limited text-uppercase pt-3">Limited lifetime replacement</p>
+													<a class="add-vehicle">Add a vehicle to find parts that fit</a>
+													<p class="price-cart text-uppercase font-weight-bold mt-4 ">$63.99</p>
+													<div class="store-pickup">
+														<p class="m-0"><i class="fas fa-check"></i> In-store pickup</p>
+														<p class="m-0"><i class="fas fa-check"></i> Ships for free on orders over $25</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6 col-md-5 add-to-cart">
+											<div class="row no-gutters align-items-center">
+												<div class="col-4 col-sm-5 col-md-8 offset-md-2 col-lg-5 offset-lg-0 quantity"> <span>Qty: </span>
+													<select class="custom-select triangle">
+													<option selected value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+												</select>
+												</div>
+												<div class="col-8 col-sm-7 col-md-10 offset-md-1 col-lg-7 offset-lg-0 py-4 py-md-3 px-3">
+													<button id="btn-addToCart-5" class="btn btn-primary text-uppercase" type="button">Add to cart</button>
+												</div>
+												<div class="shipping">
+													<div class="container">
+														<input type="radio" class="radio-button" name="radio" />
+														<span class="checkmark"></span>
+													</div>
+													<p><span class="text-uppercase font-weight-bold">Ship to home</span>
+														<br />Ships for free on orders over $25</p>
+													<div class="img-cart">
+														<img src="img/icon/gift.png" alt="img/icon/gift.png" />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item-to-cart">
+									<div class="row no-gutters align-items-center my-5">
+										<div class="col-sm-6 col-md-7">
+											<div class="row align-items-center">
+												<div class="col-lg-4 text-center text-sm-left">
+													<img src="img/items/item-8.jpg" alt="img/items/item-8.jpg" />
+												</div>
+												<div class="col-lg-8 text-center text-sm-left py-3">
+													<h3 class="name"><b class="text-uppercase">K&N</b> Replacement Air Filter</h3>
+													<span class="fas fa-star checked"></span>
+													<span class="fas fa-star checked"></span>
+													<span class="fas fa-star checked"></span>
+													<span class="fas fa-star checked"></span>
+													<span class="fas fa-star checked"></span>
+													<span class="review">(29 reviews) | #33-2304</span>
+													<p class="limited text-uppercase pt-3">Limited lifetime replacement</p>
+													<a class="add-vehicle">Add a vehicle to find parts that fit</a>
+													<p class="price-cart text-uppercase font-weight-bold mt-4 ">$63.99</p>
+													<div class="store-pickup">
+														<p class="m-0"><i class="fas fa-check"></i> In-store pickup</p>
+														<p class="m-0"><i class="fas fa-check"></i> Ships for free on orders over $25</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6 col-md-5 add-to-cart">
+											<div class="row no-gutters align-items-center">
+												<div class="col-4 col-sm-5 col-md-8 offset-md-2 col-lg-5 offset-lg-0 quantity"> <span>Qty: </span>
+													<select class="custom-select triangle">
+													<option selected value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+												</select>
+												</div>
+												<div class="col-8 col-sm-7 col-md-10 offset-md-1 col-lg-7 offset-lg-0 py-4 py-md-3 px-3">
+													<button id="btn-addToCart-6" class="btn btn-primary text-uppercase" type="button">Add to cart</button>
+												</div>
+												<div class="shipping">
+													<div class="container">
+														<input type="radio" class="radio-button" name="radio" />
+														<span class="checkmark"></span>
+													</div>
+													<p><span class="text-uppercase font-weight-bold">Ship to home</span>
+														<br />Ships for free on orders over $25</p>
+													<div class="img-cart">
+														<img src="img/icon/gift.png" alt="img/icon/gift.png" />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item-to-cart">
+									<div class="row no-gutters align-items-center my-5">
+										<div class="col-sm-6 col-md-7">
+											<div class="row align-items-center">
+												<div class="col-lg-4 text-center text-sm-left">
+													<img src="img/items/oil-3.png" alt="img/items/oil-3.png" />
+												</div>
+												<div class="col-lg-8 text-center text-sm-left py-3">
+													<h3 class="name"><b>Wearever</b> Unloaded Caliper - Domestic</h3>
+													<span class="fas fa-star checked"></span>
+													<span class="fas fa-star checked"></span>
+													<span class="fas fa-star checked"></span>
+													<span class="fas fa-star checked"></span>
+													<span class="fas fa-star checked"></span>
+													<span class="review">(154 reviews) | #18-B4728</span>
+													<p class="limited text-uppercase pt-3">Limited lifetime replacement</p>
+													<a class="add-vehicle">Add a vehicle to find parts that fit</a>
+													<p class="price-cart text-uppercase font-weight-bold mt-4 ">$63.99</p>
+													<div class="store-pickup">
+														<p class="m-0"><i class="fas fa-check"></i> In-store pickup</p>
+														<p class="m-0"><i class="fas fa-check"></i> Ships for free on orders over $25</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6 col-md-5 add-to-cart">
+											<div class="row no-gutters align-items-center">
+												<div class="col-4 col-sm-5 col-md-8 offset-md-2 col-lg-5 offset-lg-0 quantity"> <span>Qty: </span>
+													<select class="custom-select triangle">
+													<option selected value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+												</select>
+												</div>
+												<div class="col-8 col-sm-7 col-md-10 offset-md-1 col-lg-7 offset-lg-0 py-4 py-md-3 px-3">
+													<button id="btn-addToCart-7" class="btn btn-primary text-uppercase" type="button">Add to cart</button>
+												</div>
+												<div class="shipping">
+													<div class="container">
+														<input type="radio" class="radio-button" name="radio" />
+														<span class="checkmark"></span>
+													</div>
+													<p><span class="text-uppercase font-weight-bold">Ship to home</span>
+														<br />Ships for free on orders over $25</p>
+													<div class="img-cart">
+														<img src="img/icon/gift.png" alt="img/icon/gift.png" />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item-to-cart">
+									<div class="row no-gutters align-items-center my-5">
+										<div class="col-sm-6 col-md-7">
+											<div class="row align-items-center">
+												<div class="col-lg-4 text-center text-sm-left">
+													<img src="img/items/oil-4.png" alt="img/items/oil-4.png" />
+												</div>
+												<div class="col-lg-8 text-center text-sm-left py-3">
+													<h3 class="name"><b>Wearever</b> Unloaded Caliper - Domestic</h3>
+													<span class="fas fa-star checked"></span>
+													<span class="fas fa-star checked"></span>
+													<span class="fas fa-star checked"></span>
+													<span class="fas fa-star checked"></span>
+													<span class="fas fa-star checked"></span>
+													<span class="review">(154 reviews) | #18-B4728</span>
+													<p class="limited text-uppercase pt-3">Limited lifetime replacement</p>
+													<a class="add-vehicle">Add a vehicle to find parts that fit</a>
+													<p class="price-cart text-uppercase font-weight-bold mt-4 ">$63.99</p>
+													<div class="store-pickup">
+														<p class="m-0"><i class="fas fa-check"></i> In-store pickup</p>
+														<p class="m-0"><i class="fas fa-check"></i> Ships for free on orders over $25</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6 col-md-5 add-to-cart">
+											<div class="row no-gutters align-items-center">
+												<div class="col-4 col-sm-5 col-md-8 offset-md-2 col-lg-5 offset-lg-0 quantity"> <span>Qty: </span>
+													<select class="custom-select triangle">
+													<option selected value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+												</select>
+												</div>
+												<div class="col-8 col-sm-7 col-md-10 offset-md-1 col-lg-7 offset-lg-0 py-4 py-md-3 px-3">
+													<button id="btn-addToCart-8" class="btn btn-primary text-uppercase" type="button">Add to cart</button>
+												</div>
+												<div class="shipping">
+													<div class="container">
+														<input type="radio" class="radio-button" name="radio" />
+														<span class="checkmark"></span>
+													</div>
+													<p><span class="text-uppercase font-weight-bold">Ship to home</span>
+														<br />Ships for free on orders over $25</p>
+													<div class="img-cart">
+														<img src="img/icon/gift.png" alt="img/icon/gift.png" />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item-to-cart">
+									<div class="row no-gutters align-items-center my-5">
+										<div class="col-sm-6 col-md-7">
+											<div class="row align-items-center">
+												<div class="col-lg-4 text-center text-sm-left">
+													<img src="img/items/oil-2.png" alt="img/items/oil-2.png" />
+												</div>
+												<div class="col-lg-8 text-center text-sm-left py-3">
+													<h3 class="name"><b>Wearever</b> Unloaded Caliper - Domestic</h3>
+													<span class="fas fa-star checked"></span>
+													<span class="fas fa-star checked"></span>
+													<span class="fas fa-star checked"></span>
+													<span class="fas fa-star checked"></span>
+													<span class="fas fa-star"></span>
+													<span class="review">(54 reviews) | #18-B4728</span>
+													<p class="limited text-uppercase pt-3">30 day replacement if defective</p>
+													<a class="add-vehicle">Add a vehicle to find parts that fit</a>
+													<p class="price-cart text-uppercase font-weight-bold mt-4 ">$63.99</p>
+													<div class="store-pickup">
+														<p class="m-0"><i class="fas fa-check"></i> In-store pickup</p>
+														<p class="m-0"><i class="fas fa-check"></i> Ships for free on orders over $25</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6 col-md-5 add-to-cart">
+											<div class="row no-gutters align-items-center">
+												<div class="col-4 col-sm-5 col-md-8 offset-md-2 col-lg-5 offset-lg-0 quantity"> <span>Qty: </span>
+													<select class="custom-select triangle">
+													<option selected value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+												</select>
+												</div>
+												<div class="col-8 col-sm-7 col-md-10 offset-md-1 col-lg-7 offset-lg-0 py-4 py-md-3 px-3">
+													<button id="btn-addToCart-9" class="btn btn-primary text-uppercase" type="button">Add to cart</button>
+												</div>
+												<div class="shipping">
+													<div class="container">
+														<input type="radio" class="radio-button" name="radio" />
+														<span class="checkmark"></span>
+													</div>
+													<p><span class="text-uppercase font-weight-bold">Ship to home</span>
+														<br />Ships for free on orders over $25</p>
+													<div class="img-cart">
+														<img src="img/icon/gift.png" alt="img/icon/gift.png" />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item-to-cart">
+									<div class="row no-gutters align-items-center my-5">
+										<div class="col-sm-6 col-md-7">
+											<div class="row align-items-center">
+												<div class="col-lg-4 text-center text-sm-left">
+													<img src="img/items/item-9.jpg" alt="img/item-9.jpg" />
+												</div>
+												<div class="col-lg-8 text-center text-sm-left py-3">
+													<h3 class="name"><b>Valvoline </b> Premium Conventional 5W30 Motor Oil</h3>
+													<span class="fas fa-star checked"></span>
+													<span class="fas fa-star checked"></span>
+													<span class="fas fa-star checked"></span>
+													<span class="fas fa-star checked"></span>
+													<span class="fas fa-star checked"></span>
+													<span class="review">(46 reviews) | #797975/VV177</span>
+													<p class="limited text-uppercase pt-3">Limited lifetime replacement</p>
+													<a class="add-vehicle">Add a vehicle to find parts that fit</a>
+													<p class="price-cart text-uppercase font-weight-bold mt-4 ">$6.79</p>
+													<div class="store-pickup">
+														<p class="m-0"><i class="fas fa-check"></i> In-store pickup</p>
+														<p class="m-0"><i class="fas fa-check"></i> Ships for free on orders over $25</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6 col-md-5 add-to-cart">
+											<div class="row no-gutters align-items-center">
+												<div class="col-4 col-sm-5 col-md-8 offset-md-2 col-lg-5 offset-lg-0 quantity"> <span>Qty: </span>
+													<select class="custom-select triangle">
+													<option selected value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+												</select>
+												</div>
+												<div class="col-8 col-sm-7 col-md-10 offset-md-1 col-lg-7 offset-lg-0 py-4 py-md-3 px-3">
+													<button id="btn-addToCart-10" class="btn btn-primary text-uppercase" type="button">Add to cart</button>
+												</div>
+												<div class="shipping">
+													<div class="container">
+														<input type="radio" class="radio-button" name="radio" />
+														<span class="checkmark"></span>
+													</div>
+													<p><span class="text-uppercase font-weight-bold">Ship to home</span>
+														<br />Ships for free on orders over $25</p>
+													<div class="img-cart">
+														<img src="img/icon/gift.png" alt="img/icon/gift.png" />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- List View end -->
+							<!-- Grid View star -->
+							<div id="gridView" class="collapse">
+								<div class="row no-gutters mt-5">
+									<div class="col-6 pr-2">
+										<div class="item-to-cart">
+											<div class="row no-gutters">
+												<div class="col-lg-12 text-center">
+													<div class="row no-gutters align-items-center">
+														<div class="col-lg-12 image">
+															<img src="img/items/item-3.jpg" alt="img/items/item-3.jpg" />
+														</div>
+														<div class="col-lg-12 py-3">
+															<h3 class="name"><b>Wearever</b> Unloaded Caliper - Domestic</h3>
+															<span class="fas fa-star checked"></span>
+															<span class="fas fa-star checked"></span>
+															<span class="fas fa-star checked"></span>
+															<span class="fas fa-star checked"></span>
+															<span class="fas fa-star checked"></span>
+															<span class="review">(154 reviews) | #18-B4728</span>
+															<p class="limited text-uppercase pt-3">Limited lifetime replacement</p>
+															<a class="add-vehicle">Add a vehicle to find parts that fit</a>
+															<p class="price-cart text-uppercase font-weight-bold mt-4 ">$63.99</p>
+															<div class="store-pickup">
+																<p class="m-0"><i class="fas fa-check"></i> In-store pickup</p>
+																<p class="m-0"><i class="fas fa-check"></i> Ships for free on orders over $25</p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-12 add-to-cart">
+													<div class="row no-gutters align-items-center">
+														<div class="col-12 col-lg-5 quantity"> <span>Qty: </span>
+															<select class="custom-select triangle">
+															<option selected value="1">1</option>
+															<option value="2">2</option>
+															<option value="3">3</option>
+															<option value="4">4</option>
+															<option value="5">5</option>
+															<option value="6">6</option>
+															<option value="7">7</option>
+															<option value="8">8</option>
+															<option value="9">9</option>
+															<option value="10">10</option>
+														</select>
+														</div>
+														<div class="col-12 col-lg-7 py-4 px-3">
+															<button id="btn-addToCart-11" class="btn btn-primary text-uppercase" type="button">Add to cart</button>
+														</div>
+														<div class="shipping">
+															<div class="container">
+																<input type="radio" class="radio-button" name="radio" />
+																<span class="checkmark"></span>
+															</div>
+															<p><span class="text-uppercase font-weight-bold">Ship to home</span>
+																<br />Ships for free on orders over $25</p>
+															<div class="img-cart">
+																<img src="img/icon/gift.png" alt="img/icon/gift.png" />
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-6 pl-2">
+										<div class="item-to-cart">
+											<div class="row no-gutters">
+												<div class="col-lg-12 text-center">
+													<div class="row no-gutters align-items-center">
+														<div class="col-lg-12 image">
+															<img src="img/items/item-1.jpg" alt="img/items/item-1.jpg" />
+														</div>
+														<div class="col-lg-12 py-3">
+															<h3 class="name"><b>Wearever</b> Brake Parts Cleaner</h3>
+															<span class="fas fa-star checked"></span>
+															<span class="fas fa-star checked"></span>
+															<span class="fas fa-star checked"></span>
+															<span class="fas fa-star checked"></span>
+															<span class="fas fa-star"></span>
+															<span class="review">(154 reviews) | #18-B4728</span>
+															<p class="limited text-uppercase pt-3">Limited lifetime replacement</p>
+															<a class="add-vehicle">Add a vehicle to find parts that fit</a>
+															<p class="price-cart text-uppercase font-weight-bold mt-4 animated pulse infinite"><span class="text-danger">$33.99</span> <del class="ml-4 text-muted">$63.99</del></p>
+															<div class="store-pickup">
+																<p class="m-0"><i class="fas fa-check"></i> In-store pickup</p>
+																<p class="m-0"><i class="fas fa-check"></i> Ships for free on orders over $25</p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-12 add-to-cart">
+													<div class="row no-gutters align-items-center">
+														<div class="col-12 col-lg-5 quantity"> <span>Qty: </span>
+															<select class="custom-select triangle">
+															<option selected value="1">1</option>
+															<option value="2">2</option>
+															<option value="3">3</option>
+															<option value="4">4</option>
+															<option value="5">5</option>
+															<option value="6">6</option>
+															<option value="7">7</option>
+															<option value="8">8</option>
+															<option value="9">9</option>
+															<option value="10">10</option>
+														</select>
+														</div>
+														<div class="col-12 col-lg-7 py-4 px-3">
+															<button id="btn-addToCart-12" class="btn btn-primary text-uppercase" type="button">Add to cart</button>
+														</div>
+														<div class="shipping">
+															<div class="container">
+																<input type="radio" class="radio-button" name="radio" />
+																<span class="checkmark"></span>
+															</div>
+															<p><span class="text-uppercase font-weight-bold">Ship to home</span>
+																<br />Ships for free on orders over $25</p>
+															<div class="img-cart">
+																<img src="img/icon/gift.png" alt="img/icon/gift.png" />
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-6 pr-2">
+										<div class="item-to-cart">
+											<div class="row no-gutters">
+												<div class="col-lg-12 text-center">
+													<div class="row no-gutters align-items-center">
+														<div class="col-lg-12 image">
+															<img src="img/items/item-5.jpg" alt="img/items/item-5.jpg" />
+														</div>
+														<div class="col-lg-12 py-3">
+															<h3 class="name"><b class="text-uppercase">K&n</b> Replacement Air Filter</h3>
+															<span class="fas fa-star checked"></span>
+															<span class="fas fa-star checked"></span>
+															<span class="fas fa-star checked"></span>
+															<span class="fas fa-star checked"></span>
+															<span class="fas fa-star"></span>
+															<span class="review">(154 reviews) | #18-B4728</span>
+															<p class="limited text-uppercase pt-3">Limited lifetime replacement</p>
+															<a class="add-vehicle">Add a vehicle to find parts that fit</a>
+															<p class="price-cart text-uppercase font-weight-bold mt-4 ">$3.99</p>
+															<div class="store-pickup">
+																<p class="m-0"><i class="fas fa-check"></i> In-store pickup</p>
+																<p class="m-0"><i class="fas fa-check"></i> Ships for free on orders over $25</p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-12 add-to-cart">
+													<div class="row no-gutters align-items-center">
+														<div class="col-12 col-lg-5 quantity"> <span>Qty: </span>
+															<select class="custom-select triangle">
+															<option selected value="1">1</option>
+															<option value="2">2</option>
+															<option value="3">3</option>
+															<option value="4">4</option>
+															<option value="5">5</option>
+															<option value="6">6</option>
+															<option value="7">7</option>
+															<option value="8">8</option>
+															<option value="9">9</option>
+															<option value="10">10</option>
+														</select>
+														</div>
+														<div class="col-12 col-lg-7 py-4 px-3">
+															<button id="btn-addToCart-13" class="btn btn-primary text-uppercase" type="button">Add to cart</button>
+														</div>
+														<div class="shipping">
+															<div class="container">
+																<input type="radio" class="radio-button" name="radio" />
+																<span class="checkmark"></span>
+															</div>
+															<p><span class="text-uppercase font-weight-bold">Ship to home</span>
+																<br />Ships for free on orders over $25</p>
+															<div class="img-cart">
+																<img src="img/icon/gift.png" alt="img/icon/gift.png" />
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-6 pl-2">
+										<div class="item-to-cart">
+											<div class="row no-gutters">
+												<div class="col-lg-12 text-center">
+													<div class="row no-gutters align-items-center">
+														<div class="col-lg-12 image">
+															<img src="img/items/item-9.jpg" alt="img/items/item-9.jpg" />
+														</div>
+														<div class="col-lg-12 py-3">
+															<h3 class="name"><b>Valvoline </b> Premium Conventional 5W30 Motor Oil</h3>
+															<span class="fas fa-star checked"></span>
+															<span class="fas fa-star checked"></span>
+															<span class="fas fa-star checked"></span>
+															<span class="fas fa-star checked"></span>
+															<span class="fas fa-star checked"></span>
+															<span class="review">(46 reviews) | #797975/VV177</span>
+															<p class="limited text-uppercase pt-3">Limited lifetime replacement</p>
+															<a class="add-vehicle">Add a vehicle to find parts that fit</a>
+															<p class="price-cart text-uppercase font-weight-bold mt-4 ">$6.79</p>
+															<div class="store-pickup">
+																<p class="m-0"><i class="fas fa-check"></i> In-store pickup</p>
+																<p class="m-0"><i class="fas fa-check"></i> Ships for free on orders over $25</p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-12 add-to-cart">
+													<div class="row no-gutters align-items-center">
+														<div class="col-12 col-lg-5 quantity"> <span>Qty: </span>
+															<select class="custom-select triangle">
+															<option selected value="1">1</option>
+															<option value="2">2</option>
+															<option value="3">3</option>
+															<option value="4">4</option>
+															<option value="5">5</option>
+															<option value="6">6</option>
+															<option value="7">7</option>
+															<option value="8">8</option>
+															<option value="9">9</option>
+															<option value="10">10</option>
+														</select>
+														</div>
+														<div class="col-12 col-lg-7 py-4 px-3">
+															<button id="btn-addToCart-14" class="btn btn-primary text-uppercase" type="button">Add to cart</button>
+														</div>
+														<div class="shipping">
+															<div class="container">
+																<input type="radio" class="radio-button" name="radio" />
+																<span class="checkmark"></span>
+															</div>
+															<p><span class="text-uppercase font-weight-bold">Ship to home</span>
+																<br />Ships for free on orders over $25</p>
+															<div class="img-cart">
+																<img src="img/icon/gift.png" alt="img/icon/gift.png" />
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-6 pr-2">
+										<div class="item-to-cart">
+											<div class="row no-gutters">
+												<div class="col-lg-12 text-center">
+													<div class="row no-gutters align-items-center">
+														<div class="col-lg-12 image">
+															<img src="img/items/item-4.jpg" alt="img/items/item-4.jpg" />
+														</div>
+														<div class="col-lg-12 py-3">
+															<h3 class="name"><b>Wearever</b> Unloaded Caliper - Domestic</h3>
+															<span class="fas fa-star checked"></span>
+															<span class="fas fa-star checked"></span>
+															<span class="fas fa-star checked"></span>
+															<span class="fas fa-star checked"></span>
+															<span class="fas fa-star checked"></span>
+															<span class="review">(154 reviews) | #18-B4728</span>
+															<p class="limited text-uppercase pt-3">Limited lifetime replacement</p>
+															<a class="add-vehicle">Add a vehicle to find parts that fit</a>
+															<p class="price-cart text-uppercase font-weight-bold mt-4 ">$63.99</p>
+															<div class="store-pickup">
+																<p class="m-0"><i class="fas fa-check"></i> In-store pickup</p>
+																<p class="m-0"><i class="fas fa-check"></i> Ships for free on orders over $25</p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-12 add-to-cart">
+													<div class="row no-gutters align-items-center">
+														<div class="col-12 col-lg-5 quantity"> <span>Qty: </span>
+															<select class="custom-select triangle">
+															<option selected value="1">1</option>
+															<option value="2">2</option>
+															<option value="3">3</option>
+															<option value="4">4</option>
+															<option value="5">5</option>
+															<option value="6">6</option>
+															<option value="7">7</option>
+															<option value="8">8</option>
+															<option value="9">9</option>
+															<option value="10">10</option>
+														</select>
+														</div>
+														<div class="col-12 col-lg-7 py-4 px-3">
+															<button id="btn-addToCart-15" class="btn btn-primary text-uppercase" type="button">Add to cart</button>
+														</div>
+														<div class="shipping">
+															<div class="container">
+																<input type="radio" class="radio-button" name="radio" />
+																<span class="checkmark"></span>
+															</div>
+															<p><span class="text-uppercase font-weight-bold">Ship to home</span>
+																<br />Ships for free on orders over $25</p>
+															<div class="img-cart">
+																<img src="img/icon/gift.png" alt="img/icon/gift.png" />
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-6 pl-2">
+										<div class="item-to-cart">
+											<div class="row no-gutters">
+												<div class="col-lg-12 text-center">
+													<div class="row no-gutters align-items-center">
+														<div class="col-lg-12 image">
+															<img src="img/items/item-3.jpg" alt="img/items/item-3.jpg" />
+														</div>
+														<div class="col-lg-12 py-3">
+															<h3 class="name"><b>Wearever</b> Unloaded Caliper - Domestic</h3>
+															<span class="fas fa-star checked"></span>
+															<span class="fas fa-star checked"></span>
+															<span class="fas fa-star checked"></span>
+															<span class="fas fa-star checked"></span>
+															<span class="fas fa-star checked"></span>
+															<span class="review">(154 reviews) | #18-B4728</span>
+															<p class="limited text-uppercase pt-3">Limited lifetime replacement</p>
+															<a class="add-vehicle">Add a vehicle to find parts that fit</a>
+															<p class="price-cart text-uppercase font-weight-bold mt-4 ">$63.99</p>
+															<div class="store-pickup">
+																<p class="m-0"><i class="fas fa-check"></i> In-store pickup</p>
+																<p class="m-0"><i class="fas fa-check"></i> Ships for free on orders over $25</p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-12 add-to-cart">
+													<div class="row no-gutters align-items-center">
+														<div class="col-12 col-lg-5 quantity"> <span>Qty: </span>
+															<select class="custom-select triangle">
+															<option selected value="1">1</option>
+															<option value="2">2</option>
+															<option value="3">3</option>
+															<option value="4">4</option>
+															<option value="5">5</option>
+															<option value="6">6</option>
+															<option value="7">7</option>
+															<option value="8">8</option>
+															<option value="9">9</option>
+															<option value="10">10</option>
+														</select>
+														</div>
+														<div class="col-12 col-lg-7 py-4 px-3">
+															<button id="btn-addToCart-16" class="btn btn-primary text-uppercase" type="button">Add to cart</button>
+														</div>
+														<div class="shipping">
+															<div class="container">
+																<input type="radio" class="radio-button" name="radio" />
+																<span class="checkmark"></span>
+															</div>
+															<p><span class="text-uppercase font-weight-bold">Ship to home</span>
+																<br />Ships for free on orders over $25</p>
+															<div class="img-cart">
+																<img src="img/icon/gift.png" alt="img/icon/gift.png" />
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-6 pr-2">
+										<div class="item-to-cart">
+											<div class="row no-gutters">
+												<div class="col-lg-12 text-center">
+													<div class="row no-gutters align-items-center">
+														<div class="col-lg-12 image">
+															<img src="img/items/oil-3.png" alt="img/items/oil-3.png" />
+														</div>
+														<div class="col-lg-12 py-3">
+															<h3 class="name"><b>Wearever</b> Unloaded Caliper - Domestic</h3>
+															<span class="fas fa-star checked"></span>
+															<span class="fas fa-star checked"></span>
+															<span class="fas fa-star checked"></span>
+															<span class="fas fa-star checked"></span>
+															<span class="fas fa-star checked"></span>
+															<span class="review">(111 reviews) | #18-B4728</span>
+															<p class="limited text-uppercase pt-3">Limited lifetime replacement</p>
+															<a class="add-vehicle">Add a vehicle to find parts that fit</a>
+															<p class="price-cart text-uppercase font-weight-bold mt-4 ">$22.99</p>
+															<div class="store-pickup">
+																<p class="m-0"><i class="fas fa-check"></i> In-store pickup</p>
+																<p class="m-0"><i class="fas fa-check"></i> Ships for free on orders over $25</p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-12 add-to-cart">
+													<div class="row no-gutters align-items-center">
+														<div class="col-12 col-lg-5 quantity"> <span>Qty: </span>
+															<select class="custom-select triangle">
+															<option selected value="1">1</option>
+															<option value="2">2</option>
+															<option value="3">3</option>
+															<option value="4">4</option>
+															<option value="5">5</option>
+															<option value="6">6</option>
+															<option value="7">7</option>
+															<option value="8">8</option>
+															<option value="9">9</option>
+															<option value="10">10</option>
+														</select>
+														</div>
+														<div class="col-12 col-lg-7 py-4 px-3">
+															<button id="btn-addToCart-17" class="btn btn-primary text-uppercase" type="button">Add to cart</button>
+														</div>
+														<div class="shipping">
+															<div class="container">
+																<input type="radio" class="radio-button" name="radio" />
+																<span class="checkmark"></span>
+															</div>
+															<p><span class="text-uppercase font-weight-bold">Ship to home</span>
+																<br />Ships for free on orders over $25</p>
+															<div class="img-cart">
+																<img src="img/icon/gift.png" alt="img/icon/gift.png" />
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-6 pl-2">
+										<div class="item-to-cart">
+											<div class="row no-gutters">
+												<div class="col-lg-12 text-center">
+													<div class="row no-gutters align-items-center">
+														<div class="col-lg-12 image">
+															<img src="img/items/oil-4.png" alt="img/items/oil-4.png" />
+														</div>
+														<div class="col-lg-12 py-3">
+															<h3 class="name"><b>Wearever</b> Unloaded Caliper - Domestic</h3>
+															<span class="fas fa-star checked"></span>
+															<span class="fas fa-star checked"></span>
+															<span class="fas fa-star checked"></span>
+															<span class="fas fa-star checked"></span>
+															<span class="fas fa-star checked"></span>
+															<span class="review">(154 reviews) | #18-B4728</span>
+															<p class="limited text-uppercase pt-3">Limited lifetime replacement</p>
+															<a class="add-vehicle">Add a vehicle to find parts that fit</a>
+															<p class="price-cart text-uppercase font-weight-bold mt-4 ">$63.99</p>
+															<div class="store-pickup">
+																<p class="m-0"><i class="fas fa-check"></i> In-store pickup</p>
+																<p class="m-0"><i class="fas fa-check"></i> Ships for free on orders over $25</p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-12 add-to-cart">
+													<div class="row no-gutters align-items-center">
+														<div class="col-12 col-lg-5 quantity"> <span>Qty: </span>
+															<select class="custom-select triangle">
+															<option selected value="1">1</option>
+															<option value="2">2</option>
+															<option value="3">3</option>
+															<option value="4">4</option>
+															<option value="5">5</option>
+															<option value="6">6</option>
+															<option value="7">7</option>
+															<option value="8">8</option>
+															<option value="9">9</option>
+															<option value="10">10</option>
+														</select>
+														</div>
+														<div class="col-12 col-lg-7 py-4 px-3">
+															<button id="btn-addToCart-18" class="btn btn-primary text-uppercase" type="button">Add to cart</button>
+														</div>
+														<div class="shipping">
+															<div class="container">
+																<input type="radio" class="radio-button" name="radio" />
+																<span class="checkmark"></span>
+															</div>
+															<p><span class="text-uppercase font-weight-bold">Ship to home</span>
+																<br />Ships for free on orders over $25</p>
+															<div class="img-cart">
+																<img src="img/icon/gift.png" alt="img/icon/gift.png" />
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-6 pr-2">
+										<div class="item-to-cart">
+											<div class="row no-gutters">
+												<div class="col-lg-12 text-center">
+													<div class="row no-gutters align-items-center">
+														<div class="col-lg-12 image">
+															<img src="img/items/oil-2.png" alt="img/items/oil-2.png" />
+														</div>
+														<div class="col-lg-12 py-3">
+															<h3 class="name"><b>Wearever</b> Unloaded Caliper - Domestic</h3>
+															<span class="fas fa-star checked"></span>
+															<span class="fas fa-star checked"></span>
+															<span class="fas fa-star checked"></span>
+															<span class="fas fa-star checked"></span>
+															<span class="fas fa-star checked"></span>
+															<span class="review">(154 reviews) | #18-B4728</span>
+															<p class="limited text-uppercase pt-3">Limited lifetime replacement</p>
+															<a class="add-vehicle">Add a vehicle to find parts that fit</a>
+															<p class="price-cart text-uppercase font-weight-bold mt-4 ">$63.99</p>
+															<div class="store-pickup">
+																<p class="m-0"><i class="fas fa-check"></i> In-store pickup</p>
+																<p class="m-0"><i class="fas fa-check"></i> Ships for free on orders over $25</p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-12 add-to-cart">
+													<div class="row no-gutters align-items-center">
+														<div class="col-12 col-lg-5 quantity"> <span>Qty: </span>
+															<select class="custom-select triangle">
+															<option selected value="1">1</option>
+															<option value="2">2</option>
+															<option value="3">3</option>
+															<option value="4">4</option>
+															<option value="5">5</option>
+															<option value="6">6</option>
+															<option value="7">7</option>
+															<option value="8">8</option>
+															<option value="9">9</option>
+															<option value="10">10</option>
+														</select>
+														</div>
+														<div class="col-12 col-lg-7 py-4 px-3">
+															<button id="btn-addToCart-19" class="btn btn-primary text-uppercase" type="button">Add to cart</button>
+														</div>
+														<div class="shipping">
+															<div class="container">
+																<input type="radio" class="radio-button" name="radio" />
+																<span class="checkmark"></span>
+															</div>
+															<p><span class="text-uppercase font-weight-bold">Ship to home</span>
+																<br />Ships for free on orders over $25</p>
+															<div class="img-cart">
+																<img src="img/icon/gift.png" alt="img/icon/gift.png" />
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-6 pl-2">
+										<div class="item-to-cart">
+											<div class="row no-gutters">
+												<div class="col-lg-12 text-center">
+													<div class="row no-gutters align-items-center">
+														<div class="col-lg-12 image">
+															<img src="img/items/oil-1.png" alt="img/items/oil-1.png" />
+														</div>
+														<div class="col-lg-12 py-3">
+															<h3 class="name"><b>Wearever</b> Unloaded Caliper - Domestic</h3>
+															<span class="fas fa-star checked"></span>
+															<span class="fas fa-star checked"></span>
+															<span class="fas fa-star checked"></span>
+															<span class="fas fa-star checked"></span>
+															<span class="fas fa-star checked"></span>
+															<span class="review">(154 reviews) | #18-B4728</span>
+															<p class="limited text-uppercase pt-3">Limited lifetime replacement</p>
+															<a class="add-vehicle">Add a vehicle to find parts that fit</a>
+															<p class="price-cart text-uppercase font-weight-bold mt-4 ">$63.99</p>
+															<div class="store-pickup">
+																<p class="m-0"><i class="fas fa-check"></i> In-store pickup</p>
+																<p class="m-0"><i class="fas fa-check"></i> Ships for free on orders over $25</p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-12 add-to-cart">
+													<div class="row no-gutters align-items-center">
+														<div class="col-12 col-lg-5 quantity"> <span>Qty: </span>
+															<select class="custom-select triangle">
+															<option selected value="1">1</option>
+															<option value="2">2</option>
+															<option value="3">3</option>
+															<option value="4">4</option>
+															<option value="5">5</option>
+															<option value="6">6</option>
+															<option value="7">7</option>
+															<option value="8">8</option>
+															<option value="9">9</option>
+															<option value="10">10</option>
+														</select>
+														</div>
+														<div class="col-12 col-lg-7 py-4 px-3">
+															<button id="btn-addToCart-20" class="btn btn-primary text-uppercase" type="button">Add to cart</button>
+														</div>
+														<div class="shipping">
+															<div class="container">
+																<input type="radio" class="radio-button" name="radio" />
+																<span class="checkmark"></span>
+															</div>
+															<p><span class="text-uppercase font-weight-bold">Ship to home</span>
+																<br />Ships for free on orders over $25</p>
+															<div class="img-cart">
+																<img src="img/icon/gift.png" alt="img/icon/gift.png" />
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Grid View end -->
+							<!-- Item to cart end -->
+						</div>
+						<nav aria-label="Page navigation example" class="mt-4">
+							<ul class="pagination justify-content-end">
+								<li class="page-item"> <a class="page-link" href="#" tabindex="-1">Previous</a> </li>
+								<li class="page-item active"><a class="page-link" href="#">1</a></li>
+								<li class="page-item"><a class="page-link" href="#">2</a></li>
+								<li class="page-item"><a class="page-link" href="#">3</a></li>
+								<li class="page-item"> <a class="page-link" href="#">Next</a> </li>
+							</ul>
+						</nav>
+					</div>
+					<!-- Products end -->
+				</div>
+			</div>
+			<!-- Product end -->
+		</div>
+	</div>
+	<!-- Content end -->
+	<!-- Footer start -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-lg-3">
+					<h5>About Us</h5>
+					<div class="about-us">
+						<img src="img/logo.png" class="logo" alt="img/logo.png" />
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+						<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					</div>
+					<div class="contact">
+						<p class="mb-0">
+							<i class="fas fa-phone"></i>Tel: 0800/00 00 00
+						</p>
+						<p class="mb-0">
+							<i class="fas fa-fax"></i>Fax: 0800/00 00 00
+						</p>
+						<p class="mb-0">
+							<i class="fas fa-envelope"></i>Email:<a class="email" href="mailto:emailto@mail.com" title="Send message"> emailto@mail.com</a>
+						</p>
+					</div>
+					<div class="social">
+						<a href="https://www.facebook.com" title="Facebook">
+							<img src="img/social/facebook.png" alt="img/social/facebook.png" />
+						</a>
+						<a href="https://www.instagram.com" title="Instagram">
+							<img src="img/social/instagram.png" alt="img/social/instagram.png" />
+						</a>
+						<a href="https://www.youtube.com" title="YouTube">
+							<img src="img/social/youtube.png" alt="img/social/youtube.png" />
+						</a>
+						<a href="https://www.twitter.com" title="Twitter">
+							<img src="img/social/twitter.png" alt="img/social/twitter.png" />
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3">
+					<div class="row">
+						<div class="col-sm-12">
+							<h5>Footer Menu</h5>
+							<ul>
+								<li><i class="fas fa-angle-double-right"></i><a href="index.html">Home</a></li>
+								<li><i class="fas fa-angle-double-right"></i><a href="javascript:void(0)">Product</a></li>
+								<li><i class="fas fa-angle-double-right"></i><a href="about-us.html">About Us</a></li>
+								<li><i class="fas fa-angle-double-right"></i><a href="contact.html">Contact</a></li>
+							</ul>
+						</div>
+						<div class="col-sm-12 pay">
+							<h5 class="mt-4">Payment options</h5>
+							<img src="img/pay/visa.png" title="Visa" alt="img/pay/visa.png" />
+							<img src="img/pay/master-card.png" title="MasterCard" alt="img/pay/master-card.png" />
+							<img src="img/pay/maestro.png" title="Maestro" alt="img/pay/maestro.png" />
+							<img src="img/pay/american-express.png" title="American Express" alt="img/pay/american-express.png" />
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3">
+					<h5>Open On</h5>
+					<p class="font-weight-bold">Wholesale Offices</p>
+					<p>Monday - Friday
+						<br /><span class="font-weight-bold">08:00 - 19:00</span> hrs</p>
+					<p>Saturdays
+						<br /><span class="font-weight-bold">08:00 - 14:00</span> hrs</p>
+					<p class="pt-4 font-weight-bold">Retail Stores</p>
+					<p>Monday - Friday
+						<br /><span class="font-weight-bold">08:00 - 19:00</span> hrs</p>
+					<p>Saturdays
+						<br /><span class="font-weight-bold">08:00 - 14:00 </span>hrs</p>
+					<p>We are <span class="text-uppercase">closed</span> on Sundays.</p>
+				</div>
+				<div class="col-sm-6 col-lg-3">
+					<h5>Contact Us</h5>
+					<form action="">
+						<label>Your name (required)</label>
+						<input type="text" name="name" required />
+						<label>Your Email (required)</label>
+						<input type="email" name="email" required />
+						<label>Your Message (required)</label>
+						<textarea name="mssg" required rows="3" placeholder="Enter your message..."></textarea>
+						<button id="btn-send" class="btn mt-2" type="submit">Send</button>
+					</form>
+					<h5 class="mt-4">Subscribe to Newsletter</h5>
+					<p class="subscribe">Keep up to date with all our promotions and special offers. Sign up for our newsletter and we will keep you informed about news.</p>
+					<form action="">
+						<div class="input-group">
+							<input type="email" class="form-control" placeholder="Enter your email address" aria-describedby="basic-addon2" required />
+							<button id="btn-subscribe" class="btn" type="submit">Subscribe</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="all-rights">
+			<div class="container">
+				Copyright © 2018 <span class="text-uppercase font-weight-bold"><a href="http://www.webtory.rs/">Webtory</a></span>. All rights reserved
+			</div>
+		</div>
+	</footer>
+	<!-- Footer end -->
+	<a href="javascript:void(0)" id="back-to-top" title="Back to top"></a>
+	<!-- JavaScript links start -->
+	<script src="jq/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.2/web-animations.min.js"></script>
+	<script src="js/wow.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/fontawesome-all.min.js"></script>
+	<script src="js/main.js"></script>
+	<!-- JavaScript links end -->
+</body>
+
+</html>

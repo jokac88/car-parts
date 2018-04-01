@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Meta tag start-->
+	<meta charset="UTF-8" />
+	<meta name="author" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta name="theme-color" content="#58595B" />
+	<meta name="msapplication-navbutton-color" content="#58595B" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="#58595B" />
+	<!-- Meta tag end-->
+	<title>Cart</title>
+	<!-- Favicon start -->
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<!-- Favicon end -->
+	<!-- CSS and Bootstrap 4 link start -->
+	<link rel="stylesheet" type="text/css" href="css/plugins-css.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<link rel="stylesheet" type="text/css" href="css/cart.css" />
+	<!-- CSS and Bootstrap 4 link start end -->
+</head>
+
+<body>
+	<!-- Sidenav start -->
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" title="Close"></a>
+		<img class="sidenav-logo" src="img/logo.png" alt="img/logo.png" />
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a class="product" data-toggle="collapse" href="#dropdown" role="button" aria-expanded="false" aria-controls="dropdown">Product<span class="dropdown-icon">&#8628;</span></a>
+				<ul id="dropdown" class="collapse">
+					<li><a href="product.html">Brake<span>Systems</span></a></li>
+					<li><a href="product.html">Sensors</a></li>
+					<li><a href="product.html">Filters</a></li>
+					<li><a href="product.html">Engine</a></li>
+					<li><a href="product.html">Cooling<span>Systems</span></a></li>
+					<li><a href="product.html">Wheel<span>Bearings</span></a></li>
+				</ul>
+			</li>
+			<li><a href="about-us.html">About<span>Us</span></a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="javascript:void(0)" class="active">Cart</a></li>
+			<li><a href="registration.html">Registration</a></li>
+			<li><a href="javascript:void(0)" data-toggle="modal" data-target="#modal">Login</a>
+		</ul>
+		<div id="social">
+			<a class="facebook" href="https://www.facebook.com" title="Facebook">
+				<img src="img/social/facebook.png" alt="img/social/facebook.png" />
+			</a>
+			<a class="instagram" href="https://www.instagram.com" title="Instagram">
+				<img src="img/social/instagram.png" alt="img/social/instagram.png" />
+			</a>
+			<a class="youtube" href="https://www.youtube.com" title="YouTube">
+				<img src="img/social/youtube.png" alt="img/social/youtube.png" />
+			</a>
+			<a class="twitter" href="https://www.twitter.com" title="Twitter">
+				<img src="img/social/twitter.png" alt="img/social/twitter.png" />
+			</a>
+		</div>
+	</div>
+	<!-- Sidenav end -->
+	<!-- Header start -->
+	<header>
+		<div class="container">
+			<div class="row no-gutters">
+				<div class="col-md-2 d-none d-md-block">
+					<a href="index.html">
+						<img src="img/logo.png" class="logo" title="Home" alt="img/logo.png" />
+					</a>
+				</div>
+				<div class="col-md-10">
+					<div class="row">
+						<div class="col-md-6 search-input d-none d-md-block">
+							<div class="input-group">
+								<input type="text" placeholder="Enter item reference number" />
+								<button id="btn-search-input" class="btn" type="button">
+									<i class="fas fa-search"></i>
+								</button>
+							</div>
+						</div>
+						<div id="registration" class="col-md-6 text-right">
+							<ul class="registration">
+								<li>
+									<a href="registration.html" class="mr-1">
+										<img src="img/icon/user.png" alt="img/icon/profile-icon.png" />
+										<span>Registration</span>
+									</a>
+									<a href="javascript:void(0)" data-toggle="modal" data-target="#modal">
+											<img src="img/icon/password.png" alt="img/icon/password.png" />
+											<span>Login</span>
+										</a>
+									<a data-toggle="collapse" href="#user-dropdown" role="button" aria-expanded="false" aria-controls="user-dropdown">
+										<img src="img/icon/user.png" alt="img/icon/user.png" />
+										<span>User</span>
+									</a>
+									<ul id="user-dropdown" class="collapse">
+										<li><a href="admin/index.html"><i class="fas fa-user mr-2"></i>Profile</a></li>
+										<li><a href="javascript:vodi(0)"><i class="fas fa-cog mr-2"></i>Settings</a></li>
+										<li><a href="javascript:vodi(0)"><i class="fas fa-sign-out-alt mr-2"></i>Logout</a></li>
+									</ul>
+								</li>
+								<li>
+									<a id="cart-show" href="javascript:void(0)">
+										<img src="img/icon/basket.png" alt="img/icon/profile-icon.png" />
+										<span>Cart (0)</span>
+									</a>
+								</li>
+								<li class="social d-none d-md-inline-block">
+									<a href="https://www.facebook.com" title="Facebook">
+										<img src="img/social/facebook.png" alt="img/social/facebook.png" />
+									</a>
+									<a href="https://www.instagram.com" title="Instagram">
+										<img src="img/social/instagram.png" alt="img/social/instagram.png" />
+									</a>
+									<a href="https://www.youtube.com" title="YouTube">
+										<img src="img/social/youtube.png" alt="img/social/youtube.png" />
+									</a>
+									<a href="https://www.twitter.com" title="Twitter">
+										<img src="img/social/twitter.png" alt="img/social/twitter.png" />
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-12 d-none d-md-block">
+							<nav class="navbar">
+								<ul class="navbar-nav text-uppercase">
+									<li class="nav-item">
+										<a class="nav-link" href="index.html">Home</a>
+									</li>
+									<li id="product-dropdown" class="nav-item">
+										<a class="nav-link" href="product.html">Product <i class="fas fa-caret-down"></i>
+											</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="about-us.html">About Us</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="contact.html">Contact</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div id="navbarTop-right" class="col-12 text-right p-0 my-3 d-md-none">
+							<a id="navbarSearch" data-toggle="collapse" href="#search-input" role="button" aria-expanded="false" aria-controls="search-input">
+								<img src="img/icon/search-white.png" alt="img/icon/search-white.png" />
+							</a>
+							<a id="sidenav" onclick="openNav()">
+								<img class="ml-3" src="img/side-menu.png" alt="img/side-menu.png" />
+							</a>
+						</div>
+						<div id="search-input" class="col-12 px-0 collapse">
+							<div class="input-group pb-3">
+								<input type="text" placeholder="Enter item reference number" />
+								<div class="input-group-append">
+									<button id="btn-navbarSearch" class="btn btn-primary">
+										<i class="fas fa-search"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Header end -->
+	<!-- Breadcrumb start -->
+	<nav aria-label="breadcrumb">
+		<div class="container">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+				<li class="breadcrumb-item active" aria-current="page">Cart</li>
+			</ol>
+		</div>
+	</nav>
+	<!-- Breadcrumb end -->
+	<!-- Content start -->
+	<div id="content">
+		<!-- Modal start -->
+		<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-body">
+						<button type="button" id="btn-closeModal" class="close" data-dismiss="modal" aria-label="Close" title="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<div class="form-div">
+							<form action="">
+								<h1 class="d-flex justify-content-center">Please login</h1>
+								<div class="form-group d-flex justify-content-center username">
+									<input type="text" id="username" class="form-control border-0" name="username" required />
+									<span class="floating-label">Email/username</span>
+								</div>
+								<div class="form-group d-flex justify-content-center password">
+									<input type="password" id="password" class="form-control border-0" name="password" required />
+									<span class="floating-label">Password</span>
+								</div>
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input m-0" value="" onclick="myFunction()" />
+									<span class="checkbox-span"></span>
+									Show Password
+								</label>
+								<div class="d-flex justify-content-center">
+									<button type="submit" id="btn-login" class="btn btn-primary">Login</button>
+								</div>
+								<label class="form-check-label">
+							<input type="checkbox" class="form-check-input m-0" value="" />
+								<span class="checkbox-span"></span>
+								Remember me
+							</label>
+								<div class="d-flex justify-content-center text-center forgotPasword">
+									<a href="javascript:void(0)">Forgot your password?</a>
+								</div>
+							</form>
+							<div class="d-flex justify-content-center">
+								<button id="btn-create" class="btn btn-success" onclick="window.location.href='registration.html'">Create an account</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal end -->
+		<div class="container">
+			<!-- Cart start -->
+			<div id="cart">
+				<div class="item-inCart">
+					<div class="row align-items-center p-4">
+						<div id="item" class="col-lg-8">
+							<div class="row align-items-center">
+								<div class="col-lg-5 text-center">
+									<img src="img/items/oil-4.png" alt="img/items/oil-4.png" />
+									<p class="name"><b>Wearever</b> Unloaded Caliper - Domestic</p>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<div class="review">(154 reviews) | #18-B4728</div>
+								</div>
+								<div class="col-lg-4 add-toCart text-center">
+									<p class="text-uppercase font-weight-bold text-success"><img src="img/icon/check.png" class="icon" alt="img/icon/check.png" />Added to Cart</p>
+									<p class="text-uppercase font-weight-bold">Card subtotal <span class="font-weight-normal">1 (items)</span></p>
+								</div>
+								<div class="col-lg-3 text-center price">
+									<p class="text-uppercase font-weight-bold text-danger">$63.99</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="row align-items-center">
+								<div class="col-3 text-right col-sm-2 text-sm-center text-md-right col-lg-4">
+									<button id="btn-removeItem" class="btn btn-danger text-uppercase font-weight-bold" title="Remove item" type="button">&times;</button>
+								</div>
+								<div class="col-9 col-sm-6 offset-sm-2 col-md-6 offset-lg-0 col-lg-8 text-center">
+									<button id="btn-checkout" class="btn btn-primary text-uppercase font-weight-bold" onclick="window.location.href='cart.html'">Proceed to checkout</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button id="btn-closeCart" class="btn" title="Close" type="button">&times;</button>
+				</div>
+			</div>
+			<!-- Cart end -->
+			<!-- Dropdown start -->
+			<div id="dropdown-hover" class="d-none d-md-block">
+				<div class="row no-gutters">
+					<div class="col-md-8">
+						<h3>Most Popular Categories</h3>
+						<div class="row no-gutters">
+							<div class="col-md-6">
+								<h6>Brake Systems</h6>
+								<ul>
+									<li><a>Brake Booster</a></li>
+									<li><a>Brake kits</a></li>
+									<li><a>Vacuum Pump</a></li>
+									<li><a class="see-more">See more <i class="fas fa-angle-right"></i></a></li>
+								</ul>
+								<h6>Sensors</h6>
+								<ul>
+									<li><a>Camshaft Position</a></li>
+									<li><a>Sensor, Crankshaft Pulse</a></li>
+									<li><a>Vacuum Pump</a></li>
+									<li><a class="see-more">See more <i class="fas fa-angle-right"></i></a></li>
+								</ul>
+								<h6>Filters</h6>
+								<ul>
+									<li><a>Air Dryer</a></li>
+									<li><a>Air Filter</a></li>
+									<li><a>Fuel Filter</a></li>
+									<li><a class="see-more">See more <i class="fas fa-angle-right"></i></a></li>
+								</ul>
+							</div>
+							<div class="col-md-6 second">
+								<h6>Engine Parts</h6>
+								<ul>
+									<li><a>Engine Electrics</a></li>
+									<li><a>Fuel Supply System</a></li>
+									<li><a>Engine Air Supply</a></li>
+									<li><a class="see-more">See more <i class="fas fa-angle-right"></i></a></li>
+								</ul>
+								<h6>Cooling Systems</h6>
+								<ul>
+									<li><a>Radiator</a></li>
+									<li><a>Radiator Fan</a></li>
+									<li><a>Thermostat</a></li>
+									<li><a class="see-more">See more <i class="fas fa-angle-right"></i></a></li>
+								</ul>
+								<h6>Wheel Bearings</h6>
+								<ul>
+									<li><a>Nut</a></li>
+									<li><a>Seal</a></li>
+									<li><a>Split</a></li>
+									<li><a class="see-more">See more <i class="fas fa-angle-right"></i></a></li>
+								</ul>
+							</div>
+							<div class="col-10">
+								<div class="row no-gutters align-items-center offer">
+									<div class="col-md-7">
+										<h5 class="text-uppercase m-0">Let us test your starting & charging systems for free.</h5>
+									</div>
+									<div class="col-md-5">
+										<img src="img/offer.png" alt="img/offer.png" />
+										<button id="btn-learn" class="btn btn-warning text-uppercase" type="button">Learn more<i class="fas fa-caret-right ml-2"></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 all-categories">
+						<h4>All Categories</h4>
+						<ul>
+							<li><a>Air Conditioning or Heater</a></li>
+							<li><a>Bearings</a></li>
+							<li><a>Belt Tensioner Kits</a></li>
+							<li><a>Body</a></li>
+							<li><a>Brake Systems</a></li>
+							<li><a>Clutch/-Mounting Parts</a></li>
+							<li><a>Cooling Systems</a></li>
+							<li><a>Electrics Systems</a></li>
+							<li><a>Engine Parts</a></li>
+							<li><a>Exhaust Systems</a></li>
+							<li><a>Filters</a></li>
+							<li><a>Interior Equipment</a></li>
+							<li><a>Other Parts</a></li>
+							<li><a>Rubber-Metal Parts</a></li>
+							<li><a>Sensors</a></li>
+							<li><a>Special Tools</a></li>
+							<li><a>Steering and Suspension Parts</a></li>
+							<li><a>Suspension Damping</a></li>
+							<li><a>Timing Chain and Accessories</a></li>
+							<li><a>Wheel Bearings</a></li>
+							<li><a>Wheel Hubs / Axle Journals</a></li>
+							<li><a>Window Cleaning</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- Dropdown end -->
+			<!-- Cart start -->
+			<div id="cart-main">
+				<h5>Your cart (0)</h5>
+				<div id="checkout-items" class="row no-gutters my-4">
+					<div class="col-md-7">
+						<div class="row align-items-center my-3">
+							<div class="col-lg-3 text-center">
+								<img src="img/items/oil-4.png" alt="img/items/oil-4.png" class="product-picture" />
+							</div>
+							<div class="col-lg-5 text-center text-lg-left add-toCart">
+								<p class="name"><b>Wearever Unloaded Caliper - Domestic</b></p>
+								<p>Part No: 18-B4729</p>
+								<p class="text-uppercase text-primary">Limited lifetime replacement</p>
+								<p class="text-uppercase price">$63.99 x</p>
+								<select class="custom-select triangle">
+									<option selected value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+								</select>
+								<p class="text-uppercase price text-danger font-weight-bold">$63.99</p>
+								<button id="btn-remove" class="btn btn-danger">Remove</button>
+							</div>
+							<div class="col-lg-4 add-toCart">
+								<div class="row mt-3">
+									<div class="col-6 col-lg-12 shipping">
+										<div class="container">
+											<input type="radio" class="radio-button" name="radio" />
+											<span class="checkmark"></span>
+										</div>
+										<p>In-Store Pickup</p>
+										<div class="img-shop">
+											<img src="img/icon/shop.png" alt="img/icon/shop.png" />
+										</div>
+									</div>
+									<div class="col-6 col-lg-12 shipping">
+										<div class="container">
+											<input type="radio" class="radio-button" name="radio" />
+											<span class="checkmark"></span>
+										</div>
+										<p>Ship to Home</p>
+										<div class="img-cart">
+											<img src="img/icon/gift.png" alt="img/icon/gift.png" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-5 pl-lg-5">
+						<div id="paypal" class="text-uppercase">
+							<button id="btn-paypal" class="btn"><img src="img/icon/paypal.png" alt="img/icon/paypal.png" /> Checkout</button>
+						</div>
+						<div id="checkout-div">
+							<div id="order-summary">
+								<h4 class="text-uppercase text-center font-weight-bold m-0">Order summary</h4>
+							</div>
+							<div id="checkout-total">
+								<div class="promo-code-div">
+									<p class="text-uppercase">Enter your promo and speed sperks code here</p>
+									<a class="btn-collapse" data-toggle="collapse" href="#promo-code" role="button" aria-expanded="true" aria-controls="promo-code" title="Collapse"></a>
+									<div id="promo-code" class="collapse show">
+										<div class="input-group">
+											<input type="text" class="code" />
+											<button id="btn-apply" class="btn btn-primary" disabled>Apply</button>
+										</div>
+									</div>
+								</div>
+								<div id="subtotal" class="text-uppercase">
+									Subtotal<span class="text-danger font-weight-bold float-right">$63.99</span>
+								</div>
+								<div id="shipping" class="text-uppercase">
+									<p>Estimated shipping</p><span class="font-weight-bold float-right">Free</span>
+									<div class="input-group">
+										<input type="text" class="form-control" placeholder="Enter zip for estimated shipping" />
+										<button id="btn-go" class="btn btn-primary">Go</button>
+									</div>
+								</div>
+								<div id="total" class="text-uppercase">
+									Total<span class="float-right">$63.99</span>
+								</div>
+								<div id="checkout-now" class="text-uppercase">
+									<button id="btn-checkout-now" class="btn btn-primary text-uppercase font-weight-bold" onclick="window.location.href='checkout.html'">Checkout now</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Cart end -->
+		</div>
+		<!-- Top items start -->
+		<div id="items">
+			<div class="container">
+				<h2><img src="img/icon/star.png" class="icon align-bottom" alt="img/icon/star.png" /> Top items</h2>
+			</div>
+			<div class="container-fluid">
+				<button id="btn-left" class="btn" type="button">
+					<i class="fas fa-chevron-left"></i>
+				</button>
+				<button id="btn-right" class="btn" type="button">
+					<i class="fas fa-chevron-right"></i>
+				</button>
+			</div>
+			<h4 class="top-items text-uppercase text-center mb-5">Don't miss these great sale items!</h4>
+			<div class="container">
+				<div id="top-items" class="dragscroll">
+					<div class="row-fluid no-gutters">
+						<div class="col-12 col-sm-6 col-md-3">
+							<div class="item" id="item-1">
+								<img src="img/items/item-1.jpg" alt="img/items/item-1.jpg" />
+								<div class="text">
+									<p class="mb-0"><span class="font-weight-bold">Mobil1</span> 5W-30 Full Synthetic Motor Oil (5 Plus Quarts Jug)</p>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="review ml-2">(69)</span>
+									<span class="review ml-2">| # 120764</span>
+									<p class="price font-weight-bold m-0 mt-3">$ 2.69</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-3">
+							<div class="item" id="item-2">
+								<img src="img/items/item-2.jpg" alt="img/items/item-2.jpg" />
+								<div class="text">
+									<p class="mb-0"><span class="font-weight-bold">Wearever</span> Brake Parts Cleaner</p>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="review ml-2">(375)</span>
+									<span class="review ml-2">| # W7340</span>
+									<p class="price font-weight-bold m-0 mt-3">$ 2.24</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-3">
+							<div class="item" id="item-3">
+								<img src="img/items/item-3.jpg" alt="img/items/item-3.jpg" />
+								<div class="text">
+									<p class="mb-0"><span class="font-weight-bold">Wearever</span> Low-<span class="text-uppercase">voc</span> Brake Parts Cleaner</p>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="review ml-2">(262)</span>
+									<span class="review ml-2">| # W7341</span>
+									<p class="price font-weight-bold m-0 mt-3">$ 2.24</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-3">
+							<div class="item" id="item-4">
+								<img src="img/items/item-4.jpg" alt="img/items/item-4.jpg" />
+								<div class="text">
+									<p class="mb-0"><span class="font-weight-bold">Valvoline</span> Non-Chlorinated Low VOC Brake Parts Cleaner (15 oz.) </p>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star"></span>
+									<span class="review ml-2">(106)</span>
+									<span class="review ml-2">| # 602371</span>
+									<p class="price font-weight-bold m-0 mt-3">$ 3.51</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-3">
+							<div class="item" id="item-5">
+								<img src="img/items/item-5.jpg" alt="img/items/item-5.jpg" />
+								<div class="text">
+									<p class="mb-0"><span class="font-weight-bold">Rain-X Latitude </span> Latitude ® Water Repellency Wiper Blade 22" </p>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star"></span>
+									<span class="review ml-2">(70)</span>
+									<span class="review ml-2">| # 5079279-2</span>
+									<p class="price font-weight-bold m-0 mt-3">$ 17.99</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-3">
+							<div class="item" id="item-6">
+								<img src="img/items/item-6.jpg" alt="img/items/item-6.jpg" />
+								<div class="text">
+									<p class="mb-0"><span class="font-weight-bold">AutoCraft Gold</span> Battery, Group Size 35, 640 CCA</p>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="review ml-2">(1174)</span>
+									<span class="review ml-2">| # 35-2</span>
+									<p class="price font-weight-bold m-0 mt-3">$ 143.99</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-3">
+							<div class="item" id="item-7">
+								<img src="img/items/oil-1.png" alt="img/items/oil-1.jpg" />
+								<div class="text">
+									<p class="mb-0"><span class="font-weight-bold">Mobil1</span> 5W-30 Full Synthetic Motor Oil (5 Plus Quarts Jug)</p>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="review ml-2">(69)</span>
+									<span class="review ml-2">| # 120764</span>
+									<p class="price font-weight-bold m-0 mt-3">$ 2.69</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-3">
+							<div class="item" id="item-8">
+								<img src="img/items/oil-2.png" alt="img/items/oil-2.jpg" />
+								<div class="text">
+									<p class="mb-0"><span class="font-weight-bold">Mobil1</span> 5W-30 Full Synthetic Motor Oil (5 Plus Quarts Jug)</p>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="review ml-2">(69)</span>
+									<span class="review ml-2">| # 120764</span>
+									<p class="price font-weight-bold m-0 mt-3">$ 2.69</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-3">
+							<div class="item" id="item-9">
+								<img src="img/items/oil-3.png" alt="img/items/oil-3.jpg" />
+								<div class="text">
+									<p class="mb-0"><span class="font-weight-bold">Mobil1</span> 5W-30 Full Synthetic Motor Oil (5 Plus Quarts Jug)</p>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="review ml-2">(69)</span>
+									<span class="review ml-2">| # 120764</span>
+									<p class="price font-weight-bold m-0 mt-3">$ 2.69</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-3">
+							<div class="item" id="item-10">
+								<img src="img/items/oil-4.png" alt="img/items/oil-4.jpg" />
+								<div class="text">
+									<p class="mb-0"><span class="font-weight-bold">Mobil1</span> 5W-30 Full Synthetic Motor Oil (5 Plus Quarts Jug)</p>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star checked"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="review ml-2">(69)</span>
+									<span class="review ml-2">| # 120764</span>
+									<p class="price font-weight-bold m-0 mt-3">$ 2.69</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Top items end -->
+	</div>
+	<!-- Content end -->
+	<!-- Footer start -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-lg-3">
+					<h5>About Us</h5>
+					<div class="about-us">
+						<img src="img/logo.png" class="logo" alt="img/logo.png" />
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+						<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					</div>
+					<div class="contact">
+						<p class="mb-0">
+							<i class="fas fa-phone"></i>Tel: 0800/00 00 00
+						</p>
+						<p class="mb-0">
+							<i class="fas fa-fax"></i>Fax: 0800/00 00 00
+						</p>
+						<p class="mb-0">
+							<i class="fas fa-envelope"></i>Email:<a class="email" href="mailto:emailto@mail.com" title="Send message"> emailto@mail.com</a>
+						</p>
+					</div>
+					<div class="social">
+						<a href="https://www.facebook.com" title="Facebook">
+							<img src="img/social/facebook.png" alt="img/social/facebook.png" />
+						</a>
+						<a href="https://www.instagram.com" title="Instagram">
+							<img src="img/social/instagram.png" alt="img/social/instagram.png" />
+						</a>
+						<a href="https://www.youtube.com" title="YouTube">
+							<img src="img/social/youtube.png" alt="img/social/youtube.png" />
+						</a>
+						<a href="https://www.twitter.com" title="Twitter">
+							<img src="img/social/twitter.png" alt="img/social/twitter.png" />
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3">
+					<div class="row">
+						<div class="col-sm-12">
+							<h5>Footer Menu</h5>
+							<ul>
+								<li><i class="fas fa-angle-double-right"></i><a href="index.html">Home</a></li>
+								<li><i class="fas fa-angle-double-right"></i><a href="product.html">Product</a></li>
+								<li><i class="fas fa-angle-double-right"></i><a href="about-us.html">About Us</a></li>
+								<li><i class="fas fa-angle-double-right"></i><a href="contact.html">Contact</a></li>
+							</ul>
+						</div>
+						<div class="col-sm-12 pay">
+							<h5 class="mt-4">Payment options</h5>
+							<img src="img/pay/visa.png" title="Visa" alt="img/pay/visa.png" />
+							<img src="img/pay/master-card.png" title="MasterCard" alt="img/pay/master-card.png" />
+							<img src="img/pay/maestro.png" title="Maestro" alt="img/pay/maestro.png" />
+							<img src="img/pay/american-express.png" title="American Express" alt="img/pay/american-express.png" />
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3">
+					<h5>Open On</h5>
+					<p class="font-weight-bold">Wholesale Offices</p>
+					<p>Monday - Friday
+						<br /><span class="font-weight-bold">08:00 - 19:00</span> hrs</p>
+					<p>Saturdays
+						<br /><span class="font-weight-bold">08:00 - 14:00</span> hrs</p>
+					<p class="pt-4 font-weight-bold">Retail Stores</p>
+					<p>Monday - Friday
+						<br /><span class="font-weight-bold">08:00 - 19:00</span> hrs</p>
+					<p>Saturdays
+						<br /><span class="font-weight-bold">08:00 - 14:00 </span>hrs</p>
+					<p>We are <span class="text-uppercase">closed</span> on Sundays.</p>
+				</div>
+				<div class="col-sm-6 col-lg-3">
+					<h5>Contact Us</h5>
+					<form action="">
+						<label>Your name (required)</label>
+						<input type="text" name="name" required />
+						<label>Your Email (required)</label>
+						<input type="email" name="email" required />
+						<label>Your Message (required)</label>
+						<textarea name="mssg" required rows="3" placeholder="Enter your message..."></textarea>
+						<button id="btn-send" class="btn mt-2" type="submit">Send</button>
+					</form>
+					<h5 class="mt-4">Subscribe to Newsletter</h5>
+					<p class="subscribe">Keep up to date with all our promotions and special offers. Sign up for our newsletter and we will keep you informed about news.</p>
+					<form action="">
+						<div class="input-group">
+							<input type="email" class="form-control" placeholder="Enter your email address" aria-describedby="basic-addon2" required />
+							<button id="btn-subscribe" class="btn" type="submit">Subscribe</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="all-rights">
+			<div class="container">
+				Copyright © 2018 <span class="text-uppercase font-weight-bold"><a href="http://www.webtory.rs/">Webtory</a></span>. All rights reserved
+			</div>
+		</div>
+	</footer>
+	<!-- Footer end -->
+	<a href="javascript:void(0)" id="back-to-top" title="Back to top"></a>
+	<script src="jq/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.2/web-animations.min.js"></script>
+	<script src="js/wow.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/fontawesome-all.min.js"></script>
+	<script src="https://cdn.rawgit.com/asvd/dragscroll/master/dragscroll.js"></script>
+	<script src="js/main.js"></script>
+	<!-- JavaScript links end -->
+</body>
+
+</html>
